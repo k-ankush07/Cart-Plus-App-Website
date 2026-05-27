@@ -26,7 +26,7 @@ const steps = [
 export default function CustomizeCart() {
     return (
         <section className='relative'>
-            <Container className='py-[40px] max-[540px]:py-[25px]'>
+            <Container className='py-[40px] max-[540px]:py-[25px] relative z-10'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-[20px] md:gap-[60px] items-center px-[0] md:px-[20px] lg:px-[90px]'>
                     <div className='w-full max-[390px]:max-w-[100%] max-[430px]:max-w-[90%] max-[540px]:max-w-[80%] max-w-[60%] mx-auto md:max-w-[80%]'>
                         <img
