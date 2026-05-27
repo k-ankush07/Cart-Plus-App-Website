@@ -27,8 +27,8 @@ export default function IncreaseSales() {
           </div>
         </div>
       </Container>
-      <div className='absolute right-0 bottom-0'>
-        <img src="https://hubsyntax.com/cart-images/Mask group (9).svg" alt="" />
+      <div className='absolute right-0 top-0'>
+        <img src="https://hubsyntax.com/cart-images/Mask group (111).svg" alt="" />
       </div>
     </section>
   );

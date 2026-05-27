@@ -25,7 +25,7 @@ const steps = [
 
 export default function CustomizeCart() {
     return (
-        <section>
+        <section className='relative'>
             <Container className='py-[80px]'>
                 <div className='grid grid-cols-2 gap-[60px] items-center px-[90px]'>
                     <div className='max-w-[80%]'>
@@ -49,6 +49,9 @@ export default function CustomizeCart() {
                     </div>
                 </div>
             </Container>
+            <div className='absolute right-0 top-70 z-0'>
+                <img src="https://hubsyntax.com/cart-images/Mask group (12).svg" alt="" />
+            </div>
         </section>
     )
 }

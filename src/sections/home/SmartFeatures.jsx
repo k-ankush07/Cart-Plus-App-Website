@@ -60,9 +60,6 @@ export default function Features() {
               className='w-full h-auto'
             />
           </div>
-          <div className='absolute right-0 top-0'>
-            <img src="https://hubsyntax.com/cart-images/Mask group (10).svg" alt="" />
-          </div>
         </div>
       </Container>
     </section>

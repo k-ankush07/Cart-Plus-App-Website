@@ -27,8 +27,9 @@ const cards = [
 ]
 
 export default function PowerfulCart() {
+    
     return (
-        <section>
+        <section className='relative z-20'>
             <Container>
                 <h2 className='font-bold text-[50px] leading-[60px] mb-[30px] text-center'>
                     Different Journeys. One Powerful Cart Platform.
