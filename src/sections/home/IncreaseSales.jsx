@@ -5,20 +5,20 @@ import Button from '../../components/Button'
 export default function IncreaseSales() {
   return (
     <section className='relative'>
-      <Container className='py-[40px] relative z-10'>
-        <div className='grid grid-cols-2 items-center'>
+      <Container className='py-[40px] max-[540px]:py-[20px] relative z-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-[20px]'>
           <div className='flex flex-col relative z-10'>
-            <h1 className='font-semibold text-[65px] leading-[70px] max-w-[660px]'>
+            <h1 className='font-semibold text-[50px] lg:text-[65px] max-[540px]:text-[40px] max-[540px]:leading-[45px] leading-[55px] lg:leading-[70px] max-w-none md:max-w-[660px]'>
               Increase Your Sales with Smart Checkout & Upsell Tools
             </h1>
-            <p className='text-[18px] max-w-[600px] py-[20px]'>
+            <p className='text-[18px] max-[540px]:text-[16px] max-w-none md:max-w-[600px] py-[20px] max-[540px]:py-[16px]'>
               Boost conversions and average order value with a high-converting cart drawer built for modern ecommerce brands.
             </p>
             <div>
               <Button icon="https://hubsyntax.com/cart-images/buttonIcon.png">Try Demo</Button>
             </div>
           </div>
-          <div className='w-full '>
+          <div className='w-full'>
             <img
               src="https://hubsyntax.com/cart-images/your-cart-home.png"
               alt="HubCart"
@@ -27,7 +27,7 @@ export default function IncreaseSales() {
           </div>
         </div>
       </Container>
-      <div className='absolute right-0 top-0'>
+      <div className='absolute right-0 top-0 hidden lg:block'>
         <img src="https://hubsyntax.com/cart-images/Mask group (111).svg" alt="" />
       </div>
     </section>

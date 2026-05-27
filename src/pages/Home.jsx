@@ -14,13 +14,14 @@ export default function Home() {
     <div>
       <IncreaseSales />
       <Features />
+      {/* <Features />
       <CustomizeCart />
       <PowerfulCart />
       <RevenueGrowth />
       <HubCartFeatures />
       <Pricing />
       <FAQ />
-      <CTA />
+      <CTA /> */}
     </div>
   )
 }

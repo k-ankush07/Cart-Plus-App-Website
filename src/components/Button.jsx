@@ -8,7 +8,7 @@ const variants = {
 
 const sizes = {
   sm: 'px-3 py-1.5 text-xs',
-  md: 'px-[40px] py-[18px] text-sm',
+  md: 'px-[40px] py-[18px] max-[540px]:px-[20px] max-[540px]:py-[10px] text-sm',
   lg: 'px-6 py-3 text-base',
 }
 
@@ -35,8 +35,7 @@ export default function Button({
         <img
           src={icon}
           alt=""
-          className="h-[12px] w-[12px] object-contain transition-transform duration-300 group-hover:rotate-45"
-        />
+          className="h-[12px] w-[12px] max-[540px]:h-[10px] max-[540px]:w-[10px] object-contain transition-transform duration-300 group-hover:rotate-45" />
       )}
     </button>
   )
