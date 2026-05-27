@@ -15,6 +15,8 @@ export default function Home() {
       <IncreaseSales />
       <Features />
       <CustomizeCart />
+      <PowerfulCart />
+       <RevenueGrowth />
       {/* <Features />
       <CustomizeCart />
       <PowerfulCart />

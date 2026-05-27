@@ -30,14 +30,14 @@ export default function PowerfulCart() {
     
     return (
         <section className='relative z-20'>
-            <Container>
-                <h2 className='font-bold text-[50px] leading-[60px] mb-[30px] text-center'>
+           <Container className='py-[40px] max-[540px]:py-[25px]'>
+                <h2 className='font-bold  max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[20px] mb-[30px] text-center'>
                     Different Journeys. One Powerful Cart Platform.
                 </h2>
-                <div className='grid grid-cols-3 gap-[40px] text-[#1D1E20] text-center'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-[20px] lg:gap-[40px] text-[#1D1E20] text-center'>
                     {cards.map((card) => (
-                        <div key={card.id} className='bg-[#FFFFFF] rounded-[15px] py-[30px] px-[35px]'>
-                            <div className='py-[15px] w-[100px] m-auto mb-[20px]'>
+                        <div key={card.id} className='bg-[#FFFFFF] rounded-[15px] py-[30px] px-[35px] max-[480px]:py-[20px] max-[480px]:px-[20px]'>
+                            <div className='py-[15px] w-[100px] m-auto mb-[20px] max-[480px]:mb-[5px]'>
                                 <img src={card.image} alt='HubCart' />
                             </div>
                             <h3 className='text-[24px] leading-[30px] font-bold mb-[15px]'>{card.title}</h3>

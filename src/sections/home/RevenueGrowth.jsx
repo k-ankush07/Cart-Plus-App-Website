@@ -25,22 +25,22 @@ const stats = [
 export default function RevenueGrowth() {
     return (
         <section>
-            <Container className='py-[80px]'>
-                <h2 className='font-bold text-[50px] leading-[60px] mb-[20px] text-center'>
+             <Container className='py-[40px] max-[540px]:py-[25px]'>
+               <h2 className='font-bold  max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[15px] mb-[20px] text-center'>
                     Scalable Revenue Growth
                 </h2>
-                <p className='text-[18px] leading-[28px] text-center max-w-[930px] m-auto mb-[30px]'>
+                <p className='max-[540px]:text-[16px] text-[18px] max-[540px]:leading-[22px] leading-[28px] text-center max-[540px]:max-w-full max-w-[930px] m-auto max-[540px]:mb-[20px] mb-[30px]'>
                     Join thousands of Shopify brands using HubCart to increase conversions, grow average order
                     value, and drive more revenue automatically.
                 </p>
-                <div className='p-[80px] bg-[#512B6C] rounded-[15px] flex items-center justify-center gap-[150px]'>
+                <div className='p-[40px] md:p-[80px] bg-[#512B6C] rounded-[15px] flex flex-col md:flex-row items-center text-center justify-center gap-[50px] lg:gap-[150px]'>
                     {stats.map((stat) => (
                         <div key={stat.id} className='flex flex-col items-center'>
                             <div className='h-[100px] w-[100px] rounded-[50%] bg-white p-[20px] flex items-center justify-center'>
                                 <img src={stat.image} alt='HubCart' />
                             </div>
                             <p className='text-[55px] leading-[55px] font-[500] my-[15px]'>{stat.value}</p>
-                            <p className='text-[16px] leading-[16px]'>{stat.label}</p>
+                            <p className='text-[16px] leading-[20px] '>{stat.label}</p>
                         </div>
                     ))}
                 </div>
