@@ -33,13 +33,13 @@ export default function RevenueGrowth() {
                     Join thousands of Shopify brands using HubCart to increase conversions, grow average order
                     value, and drive more revenue automatically.
                 </p>
-                <div className='p-[40px] md:p-[80px] bg-[#512B6C] rounded-[15px] flex flex-col md:flex-row items-center text-center justify-center gap-[50px] lg:gap-[150px]'>
+                <div className='p-[40px] md:p-[80px] bg-[#512B6C] rounded-[15px] flex flex-col md:flex-row items-center text-center justify-center max-[540px]:gap-[30px] gap-[50px] lg:gap-[150px]'>
                     {stats.map((stat) => (
                         <div key={stat.id} className='flex flex-col items-center'>
                             <div className='h-[100px] w-[100px] rounded-[50%] bg-white p-[20px] flex items-center justify-center'>
                                 <img src={stat.image} alt='HubCart' />
                             </div>
-                            <p className='text-[55px] leading-[55px] font-[500] my-[15px]'>{stat.value}</p>
+                            <p className='max-[540px]:text-[40px] text-[55px] max-[540px]:leading-[45px] leading-[55px] font-[500] my-[15px]'>{stat.value}</p>
                             <p className='text-[16px] leading-[20px] '>{stat.label}</p>
                         </div>
                     ))}
