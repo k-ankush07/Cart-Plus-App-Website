@@ -35,7 +35,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <section>
+    <section className='relative z-10'>
       <Container className="pt-[20px]">
        <div className='px-[78px]'>
           <div className="text-center">

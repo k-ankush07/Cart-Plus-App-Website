@@ -54,8 +54,12 @@ export default function HubCartFeatures() {
     }
 
     return (
-        <section>
-            <Container>
+        <section className='relative'>
+            <div className='absolute z-0'>
+                <img src="https://hubsyntax.com/cart-images/Mask group (14).svg" alt="" />
+            </div>
+
+            <Container className='relative z-10'>
                 <div className='grid grid-cols-2 gap-[80px] items-center'>
 
                     {/* Left - Accordion */}
@@ -99,6 +103,9 @@ export default function HubCartFeatures() {
 
                 </div>
             </Container>
+            <div className='absolute z-0 right-25 top-0'>
+                <img src="https://hubsyntax.com/cart-images/Mask group (16).svg" alt="" />
+            </div>
         </section>
     )
 }

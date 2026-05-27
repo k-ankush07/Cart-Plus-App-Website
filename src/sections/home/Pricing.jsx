@@ -72,8 +72,9 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section>
-      <Container className='py-[80px]'>
+    <section className='relative'>
+
+      <Container className='py-[80px] relative z-10'>
         <div className='px-[78px]'>
           <div className='text-center mb-[40px]'>
             <h2 className='font-bold text-[50px] leading-[60px] mb-[20px]'>
@@ -90,8 +91,8 @@ export default function Pricing() {
               <div
                 key={plan.id}
                 className={`relative rounded-[10px] py-[30px] px-[40px] flex flex-col justify-between ${plan.highlight
-                    ? 'bg-[#512B6C] text-white mt-[-20px] mb-[-20px]'
-                    : 'bg-white text-[#1D1E20] border border-gray-200'
+                  ? 'bg-[#512B6C] text-white mt-[-20px] mb-[-20px]'
+                  : 'bg-white text-[#1D1E20] border border-gray-200'
                   }`}
               >
                 {/* Badge */}
@@ -150,6 +151,12 @@ export default function Pricing() {
           </div>
         </div>
       </Container>
+       <div className='absolute z-0 top-100 left-0'>
+        <img src="https://hubsyntax.com/cart-images/Mask group (20).svg" alt="" />
+      </div>
+       <div className='absolute z-0 top-50 right-0'>
+        <img src="https://hubsyntax.com/cart-images/Mask group (21).svg" alt="" />
+      </div>
     </section>
   )
 }

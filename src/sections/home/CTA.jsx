@@ -4,7 +4,7 @@ import Button from '../../components/Button'
 
 export default function CTA() {
   return (
-    <section>
+    <section className='relative z-20'>
       <Container className="py-20">
         <div
           className="relative overflow-hidden rounded-[15px] px-8 py-[80px] text-center text-white"
