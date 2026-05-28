@@ -7,6 +7,7 @@ import Features from './pages/Features'
 import Pricing from './pages/Pricing'
 import About from './pages/About'
 import Blog from './pages/Blog'
+import Articles from './pages/Articles'
 import Contact from './pages/Contact'
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} /> 
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/articles" element={<Articles />} />
           <Route path="*" element={<Home />} />
         </Route>
       </Routes>
