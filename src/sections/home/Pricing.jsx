@@ -70,7 +70,7 @@ const plans = [
   },
 ]
 
-export default function Pricing() {
+export default function Pricing({ showGradient }) {
   return (
     <section className='relative'>
       <Container className='py-[40px] max-[540px]:py-[25px] relative z-10'>
@@ -152,12 +152,15 @@ export default function Pricing() {
           </div>
         </div>
       </Container>
-      <div className='absolute z-0 top-100 left-0 hidden xl:block'>
-        <img src="https://hubsyntax.com/cart-images/Mask group (20).svg" alt="" loading="lazy" decoding="async" />
-      </div>
-      <div className='absolute z-0 top-50 right-0 hidden xl:block'>
-        <img src="https://hubsyntax.com/cart-images/Mask group (21).svg" alt="" loading="lazy" decoding="async" />
-      </div>
+      {showGradient && (
+        <>
+          <div className='absolute z-0 top-100 left-0 hidden xl:block'>
+            <img src="https://hubsyntax.com/cart-images/Mask group (20).svg" alt="" loading="lazy" decoding="async" />
+          </div>
+          <div className='absolute z-0 top-50 right-0 hidden xl:block'>
+            <img src="https://hubsyntax.com/cart-images/Mask group (21).svg" alt="" loading="lazy" decoding="async" />
+          </div>
+        </>)}
     </section>
   )
 }

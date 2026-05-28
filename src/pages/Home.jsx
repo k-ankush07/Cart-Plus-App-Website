@@ -23,7 +23,7 @@ export default function Home() {
       <PowerfulCart />
       <RevenueGrowth />
       <HubCartFeatures />
-      <Pricing />
+      <Pricing showGradient />
       <FAQ />
       <CTA />
     </div>
