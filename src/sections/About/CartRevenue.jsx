@@ -29,7 +29,7 @@ export default function CartRevenue() {
         <section className="relative"
         >
             <Container className="py-[40px] max-[540px]:py-[25px] relative z-10">
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-[40px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px] sm:gap-[40px]">
                     {stats.map((stat) => (
                         <div
                             key={stat.label}
@@ -46,11 +46,11 @@ export default function CartRevenue() {
 
                             {/* Text */}
                             <div>
-                                <p className="text-white font-bold text-[40px] leading-tight">
+                                <p className="text-white font-bold text-[30px] sm:text-[40px] leading-tight">
                                     {stat.value}
                                 </p>
                                 <p
-                                    className="text-[18px] leading-snug mt-0.5"
+                                    className="text-[16px] sm:text-[18px] leading-snug mt-0.5"
                                 >
                                     {stat.label}
                                 </p>
