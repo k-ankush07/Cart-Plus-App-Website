@@ -17,8 +17,8 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full py-[30px] max-[540px]:py-[16px] px-0 backdrop-blur relative">
-        <Container className="flex items-center justify-between">
+      <header className="sticky top-0 z-40 w-full py-[30px] max-[540px]:py-[16px] px-0 backdrop-blur ">
+        <Container className="flex items-center justify-between relative ">
 
           {/* Logo */}
           <Link to="/" className="flex items-center">
