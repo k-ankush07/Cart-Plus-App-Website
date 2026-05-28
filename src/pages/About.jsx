@@ -21,7 +21,7 @@ export default function About() {
         paragraph3='Our focus is on building tools that simplify the checkout journey, reduce friction, and enable customers to complete purchases with confidence. We&apos;re committed to helping brands unlock more value from the traffic they already have while creating shopping experiences customers genuinely enjoy.'
         gradientImg ='https://hubsyntax.com/cart-images/Mask group (30).svg'
      />
-     <DrawerDesigned />
+     
       {/* <OurMission
         img='https://hubsyntax.com/cart-images/Rectangle%20240648554.svg'
         heading='Our Mission'
