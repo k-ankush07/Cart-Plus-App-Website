@@ -21,7 +21,7 @@ function Icon({ value }) {
             alt={value ? 'Included' : 'Not included'}
             width={25}
             height={25}
-            className="mx-auto"
+            className="mx-auto w-[25px] h-[20px] lg:w-[20px] lg:h-[25px]"
         />
     )
 }
@@ -43,39 +43,39 @@ export default function EverythingPlan() {
                 </div>
 
                 {/* Table */}
-                <div className='overflow-x-auto rounded-[12px] border border-[#FFFFFF]'>
+                <div className='rounded-[12px] border border-[#FFFFFF]'>
                     <table className='w-full border-collapse'>
                         <thead>
                             <tr>
                                 {/* Feature label col */}
-                                <th className='py-[28px] px-[38px] text-left text-[24px] tracking-widest font-semibold'>
+                                <th className='py-[15px] lg:py-[28px] px-[20px] lg:px-[38px] text-left text-[24px] tracking-widest font-semibold'>
                                     From Feature
                                 </th>
 
                                 {/* Free */}
-                                <th className='py-[28px] px-[38px] text-center'>
-                                    <p className='text-white font-bold text-[25px] mb-1'>Free</p>
-                                    <p className='text-white font-[600] text-[38px] leading-none flex items-end justify-center'>
+                                <th className='py-[15px] lg:py-[28px] px-[20px] lg:px-[38px] text-center'>
+                                    <p className='text-white font-bold text-[20px] lg:text-[25px] mb-1'>Free</p>
+                                    <p className='text-white font-[600] text-[25px] lg:text-[38px] leading-none flex items-end justify-center'>
                                         $0.00{' '}
-                                        <span className='text-[20px] font-normal opacity-70'>/lifetime</span>
+                                        <span className='text-[14px] lg:text-[14px] lg:text-[20px] font-normal opacity-70'>/lifetime</span>
                                     </p>
                                 </th>
 
                                 {/* Pro (highlighted) */}
-                                <th className='py-[28px] px-[38px] text-center bg-[#46285C]'>
-                                    <p className='text-white font-bold text-[25px] mb-1'>Pro</p>
-                                    <p className='text-white font-[600] text-[38px] leading-none flex items-end justify-center'>
+                                <th className='py-[15px] lg:py-[28px] px-[20px] lg:px-[38px] text-center bg-[#46285C]'>
+                                    <p className='text-white font-bold text-[20px] lg:text-[25px] mb-1'>Pro</p>
+                                    <p className='text-white font-[600] text-[25px] lg:text-[38px] leading-none flex items-end justify-center'>
                                         $4.99{' '}
-                                        <span className='text-[20px] font-normal opacity-70'>/lifetime</span>
+                                        <span className='text-[14px] lg:text-[20px] font-normal opacity-70'>/lifetime</span>
                                     </p>
                                 </th>
 
                                 {/* Scale */}
-                                <th className='py-[28px] px-[38px] text-center'>
-                                    <p className='text-white font-bold text-[25px] mb-1'>Scale</p>
-                                    <p className='text-white font-[600] text-[38px] leading-none flex items-end justify-center'>
+                                <th className='py-[15px] lg:py-[28px] px-[20px] lg:px-[38px] text-center'>
+                                    <p className='text-white font-bold text-[20px] lg:text-[25px] mb-1'>Scale</p>
+                                    <p className='text-white font-[600] text-[25px] lg:text-[38px] leading-none flex items-end justify-center'>
                                         $14.99{' '}
-                                        <span className='text-[20px] font-normal opacity-70'>/lifetime</span>
+                                        <span className='text-[14px] lg:text-[20px] font-normal opacity-70'>/lifetime</span>
                                     </p>
                                 </th>
                             </tr>
@@ -87,16 +87,16 @@ export default function EverythingPlan() {
                                     key={feature.name}
                                     className='border-t border-white/[0.07]'
                                 >
-                                    <td className='px-[38px] py-[20px] text-white text-[20px] font-medium'>
+                                    <td className='px-[20px] lg:px-[38px] py-[15px] lg:py-[20px] text-white text-[15px] lg:text-[20px] font-medium'>
                                         {feature.name}
                                     </td>
-                                    <td className='px-[38px] py-[20px] text-center'>
+                                    <td className='px-[20px] lg:px-[38px] py-[15px] lg:py-[20px] text-center'>
                                         <Icon value={feature.free} />
                                     </td>
-                                    <td className='px-[38px] py-[20px] text-center bg-[#46285C]'>
+                                    <td className='px-[20px] lg:px-[38px] py-[15px] lg:py-[20px] text-center bg-[#46285C]'>
                                         <Icon value={feature.pro} />
                                     </td>
-                                    <td className='px-[38px] py-[20px] text-center'>
+                                    <td className='px-[20px] lg:px-[38px] py-[15px] lg:py-[20px] text-center'>
                                         <Icon value={feature.scale} />
                                     </td>
                                 </tr>
