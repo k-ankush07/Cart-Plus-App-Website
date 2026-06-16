@@ -9,8 +9,8 @@ export default function Pricing() {
   return (
     <div>
       <BannerSection
-        heading='Built to Turn More Carts Into Revenue'
-        paragraph='We created this cart drawer app after seeing thousands of Shopify stores lose revenue with outdated cart experiences. Our goal is simple: help merchants increase conversions, upsells, and average order value with a faster, smarter cart experience.'
+        heading='Build to Turn More Carts Into Sales'
+        paragraph='We created HubCart after seeing thousands of Shopify stores lose sales because of outdated cart experiences. Our goal is simple help merchants increase conversions, drive more upsells, and boost average order value with a faster, smarter cart experience.'
         buttonText='Try Demo'
         img='https://hubsyntax.com/cart-images/Group 1707480290.svg'
       />

@@ -77,11 +77,10 @@ export default function Pricing({ showGradient }) {
         <div className='px-[0px] lg:px-[78px] max-[840px]:pb-[0] pb-[20px]'>
           <div className='text-center max-[540px]:mb-[20px] mb-[40px]'>
             <h2 className='font-bold max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[15px] mb-[20px]'>
-              Simple, Transparent Pricing
+              Simple, Transparent pricing
             </h2>
             <p className='max-[540px]:text-[16px] text-[18px] max-[540px]:leading-[22px] leading-[28px] mx-auto max-w-[950px]'>
-              Choose the perfect plan for your store and start increasing conversions, average order
-              value, and revenue with powerful cart and checkout optimization tools.
+              Choose the plan that best fits your store and grow with confidence.
             </p>
           </div>
 
