@@ -40,8 +40,8 @@ export default function Footer() {
             <Link to="/blog" onClick={scrollToTop} className="text-gray-200 transition-colors hover:text-white">Blog</Link>
             <Link to="/contact" onClick={scrollToTop} className="text-gray-200 transition-colors hover:text-white">Contact Us</Link>
             <Link to="/pricing" onClick={scrollToTop} className="text-gray-200 transition-colors hover:text-white">Pricing</Link>
-            <Link to="/terms" onClick={scrollToTop} className="text-gray-200 transition-colors hover:text-white">Terms & Conditions</Link>
-            <Link to="/privacy" onClick={scrollToTop} className="text-gray-200 transition-colors hover:text-white">Privacy Policy</Link>
+            <Link to="/terms-and-condition" onClick={scrollToTop} className="text-gray-200 transition-colors hover:text-white">Terms & Conditions</Link>
+            <Link to="/privacy-policy" onClick={scrollToTop} className="text-gray-200 transition-colors hover:text-white">Privacy Policy</Link>
           </nav>
         </div>
       </Container>

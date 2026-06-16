@@ -29,8 +29,8 @@ export default function App() {
           <Route path="/blog/:slug" element={<BlogDetailPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/pricing" element={<Pricing />} />
-          <Route path="/terms" element={<Terms />} />
-          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms-and-condition" element={<Terms />} />
+          <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="*" element={<Home />} />
         </Route>
       </Routes>
