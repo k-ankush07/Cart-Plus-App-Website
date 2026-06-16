@@ -9,8 +9,8 @@ export default function Contact() {
   return (
     <div>
       <TopHeading
-        heading=' We’d Love to Hear From You'
-        paragraph=' Have questions about HubCart or need help optimizing your Shopify cart experience? Our team is here to help you increase conversions, boost average order value, and create a smoother checkout journey for your customers. Tell us a little about your store and goals, and we’ll get back to you as soon as possible.'
+        heading="We'd love to hear from you"
+        paragraph="Have questions about HubCart or need help improving your Shopify cart and checkout experience? Our team is here to help. Tell us a little about your store and goals, and we'll get back to you as soon as possible."
         showGradient
       />
       <ContactForm />

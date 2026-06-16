@@ -53,13 +53,24 @@ export default function ContactForm() {
             <div className="flex flex-col gap-[30px] lg:gap-[50px]">
               <div>
                 <h2 className='font-bold max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px]'>
-                  Get in Touch
+                  Let's Discuss Your Goals
                 </h2>
-                <p className='font-[300] max-[540px]:text-[16px] text-[18px] max-[540px]:leading-[22px] leading-[25px] mx-auto max-w-[950px]'>
-                  Have questions about HubCart or need help optimizing your cart experience?
-                  Our team is here to help you increase conversions, boost average order value,
-                  and create a smoother checkout experience for your customers.
-                </p>
+
+                <div className='mt-3 flex flex-col gap-4'>
+                  <div>
+                    <h3 className='font-semibold text-[18px] lg:text-[20px]'>Improve Your Cart Experience</h3>
+                    <p className='text-[15px] lg:text-[16px] mt-1'>
+                      Tell us about the challenges you're facing, and we'll help you create a smoother shopping journey for your customers.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className='font-semibold text-[18px] lg:text-[20px]'>Boost Conversions & Revenue</h3>
+                    <p className='text-[15px] lg:text-[16px] mt-1'>
+                      Discover how HubCart can reduce cart abandonment, increase average order value, and help turn more visitors into customers.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* contact details */}
