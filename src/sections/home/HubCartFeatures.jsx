@@ -6,45 +6,45 @@ const features = [
         id: 1,
         title: 'Add to Unlock',
         description:
-            'Unlock exclusive savings automatically as customers add more products to their cart. Increase average order value with dynamic reward milestones and smart cart incentives.',
+            'Reward shoppers with exclusive offers as they add more items to their cart, encouraging larger purchases and higher order values.',
         defaultOpen: true,
     },
     {
         id: 2,
         title: 'Buy More Save More',
         description:
-            'Unlock exclusive savings automatically as customers add more products to their cart. Increase average order value with dynamic reward milestones and smart cart incentives.',
+            'Automatically apply volume discounts that give customers more value when they buy more.',
         defaultOpen: false,
     },
     {
         id: 3,
         title: 'One Click Upsell',
         description:
-            'Unlock exclusive savings automatically as customers add more products to their cart. Increase average order value with dynamic reward milestones and smart cart incentives.',
+            'Recommend relevant products in the cart and let shoppers add them instantly with a single click.',
         defaultOpen: false,
     },
     {
         id: 4,
         title: 'Frequently Bought Together',
         description:
-            'Unlock exclusive savings automatically as customers add more products to their cart. Increase average order value with dynamic reward milestones and smart cart incentives.',
+            'Suggest complementary products that customers are likely to purchase together to increase basket size.',
         defaultOpen: false,
     },
     {
         id: 5,
         title: 'Cart Designer',
         description:
-            'Unlock exclusive savings automatically as customers add more products to their cart. Increase average order value with dynamic reward milestones and smart cart incentives.',
+            'Customize your cart to match your brand with flexible design options and a seamless shopping experience.',
         defaultOpen: false,
     },
     {
         id: 6,
         title: 'Powerful Analytics',
         description:
-            'Unlock exclusive savings automatically as customers add more products to their cart. Increase average order value with dynamic reward milestones and smart cart incentives.',
+            'Track cart activity, monitor performance, and uncover insights that help you improve conversions.',
         defaultOpen: false,
     },
-]
+];
 
 export default function HubCartFeatures() {
     const [openId, setOpenId] = useState(1)
@@ -64,7 +64,7 @@ export default function HubCartFeatures() {
 
                     {/* Left - Accordion */}
                     <div>
-                        <h2 className='font-bold  max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[20px] mb-[30px]'>HubCart Features</h2>
+                        <h2 className='font-bold  max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[10px] mb-[20px]'>HubCart Features</h2>
                         <div className='flex flex-col'>
                             {features.map((feature) => (
                                 <div key={feature.id} className=' py-[15px]'>
@@ -85,7 +85,7 @@ export default function HubCartFeatures() {
                                         </span>
                                     </button>
                                     {openId === feature.id && (
-                                        <p className='text-[16px] leading-[26px] text-white/70 pt-[12px]'>
+                                        <p className='text-[16px] leading-[26px] text-white/70 pt-[10px]'>
                                             {feature.description}
                                         </p>
                                     )}
