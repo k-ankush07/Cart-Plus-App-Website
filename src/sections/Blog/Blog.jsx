@@ -1,69 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Container from '../../components/Container'
-
-const slugify = (text) =>
-  text
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-
-const blogPosts = [
-  {
-    id: 1,
-    date: 'May 25, 2026',
-    title: ' How to Reduce Cart Abandonment Rate and Maximize E-commerce Conversions',
-    desc: 'In e-commerce, one of the most critical challenges businesses face is the high rate at which potential customers leave without completing their purchase. This behavior is measured through the Cart Abandonment Rate, which represents the percentage of users who add products to their cart but exit the website before finishing the checkout process.',
-    img: 'https://hubsyntax.com/cart-images/Rectangle 240648321.svg',
-  },
-  {
-    id: 2,
-    date: 'May 25, 2026',
-    title: 'Shopify Growth Insights That Drive',
-    desc: 'Learn proven tactics to increase conversions...',
-    img: 'https://hubsyntax.com/cart-images/Rectangle 240648321.svg',
-  },
-  {
-    id: 3,
-    date: 'May 25, 2026',
-    title: 'The Shopify Conversion Optimization',
-    desc: 'Discover ecommerce strategies, upsell...',
-    img: 'https://hubsyntax.com/cart-images/Rectangle 240648321.svg',
-  },
-  {
-    id: 4,
-    date: 'May 25, 2026',
-    title: 'Convert More Shopify Visitors',
-    desc: 'Explore practical guides, growth strategies...',
-    img: 'https://hubsyntax.com/cart-images/Rectangle 240648321.svg',
-  },
-  {
-    id: 5,
-    date: 'May 25, 2026',
-    title: 'Ecommerce Growth Insights',
-    desc: 'From cart optimization to upselling strategies...',
-    img: 'https://hubsyntax.com/cart-images/Rectangle 240648321.svg',
-  },
-  {
-    id: 6,
-    date: 'May 25, 2026',
-    title: 'Proven Shopify Growth Strategies',
-    desc: 'Get actionable tips and proven techniques to...',
-    img: 'https://hubsyntax.com/cart-images/Rectangle 240648321.svg',
-  },
-]
+import { blogPosts, slugify } from '../../components/data/Blogdata'
 
 export default function Blog() {
-
+  
   return (
     <section>
       <Container className="relative z-10 py-[40px] max-[540px]:py-[25px]">
-        <h2 className="font-bold text-[30px] leading-[40px] mb-[20px] text-white">
-          Blog
-        </h2>
+        <h2 className="font-bold text-[30px] leading-[40px] mb-[20px] text-white">Blog</h2>
 
-        {/* 3-column grid */}
         <div className="grid grid-cols-3 gap-[30px] lg:gap-[50px] max-[640px]:grid-cols-1 max-[1024px]:grid-cols-2">
           {blogPosts.map((post) => (
             <Link
@@ -87,7 +33,6 @@ export default function Blog() {
                 </p>
                 <span className="group flex items-center gap-[10px] text-[18px] font-medium w-fit cursor-pointer">
                   Read more
-
                   <img
                     src="https://hubsyntax.com/cart-images/Vector (9).svg"
                     alt=""
@@ -96,43 +41,6 @@ export default function Blog() {
                 </span>
               </div>
             </Link>
-          ))}
-        </div>
-
-        {/* Pagination */}
-        <div className="flex items-center justify-center gap-1.5 mt-7">
-          {[
-            {
-              type: "icon",
-              src: "https://hubsyntax.com/cart-images/arrowleft.svg",
-            },
-            { label: "1" },
-            { label: "2" },
-            { label: "…" },
-            { label: "10" },
-            {
-              type: "icon",
-              src: "https://hubsyntax.com/cart-images/arrowright.svg",
-            },
-          ].map((item, i) => (
-            <button
-              key={i}
-              className={`h-[35px] w-[35px] sm:w-[60px] sm:h-[60px] border-0 cursor-pointer rounded-[8px] sm:rounded-[16px] text-[15px] sm:text-[22px] border flex items-center justify-center transition
-        ${item.label === "1"
-                  ? "bg-[#512B6C]  text-white"
-                  : "bg-white text-black"
-                }`}
-            >
-              {item.type === "icon" ? (
-                <img
-                  src={item.src}
-                  alt=""
-                  className="w-[10px] h-[10px] sm:w-[14px] sm:h-[14px]"
-                />
-              ) : (
-                item.label
-              )}
-            </button>
           ))}
         </div>
       </Container>
