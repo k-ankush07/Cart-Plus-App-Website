@@ -7,7 +7,6 @@ export default function BlogDetailPage() {
     return (
         <div>
             <BlogDetail />
-            <FAQ />
             <CTA />
         </div>
     )

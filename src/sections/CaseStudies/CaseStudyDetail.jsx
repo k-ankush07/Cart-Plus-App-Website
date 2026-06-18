@@ -7,7 +7,7 @@ export default function CaseStudyDetail() {
     return (
         <section className='relative'>
             <Container className="relative z-10 py-[40px] max-[540px]:py-[25px]">
-                <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-12 items-start">
+                <div>
                     <div>
                         <img src="https://hubsyntax.com/cart-images/Rectangle 240648569.svg" alt="" className='mb-[20px]' />
                         <div className='mb-[20px]'>
@@ -228,28 +228,6 @@ export default function CaseStudyDetail() {
                             <p className='text-[16px] leading-[26px]'>
                                 Our cart optimization solutions help Shopify brands increase conversions, reduce cart abandonment, and maximize revenue from existing traffic through strategic upsells, cross-sells, and checkout optimization.
                             </p>
-                        </div>
-                    </div>
-                    <div className="space-y-10">
-                        <div className='bg-[#512B6C] rounded-[10px] p-[30px] mb-[20px]'>
-                            <h3 className='text-[20px] font-[600] mb-[15px]'>Increase Conversions With a Better Cart Experience</h3>
-                            <p className='mb-[15px] text-[16px]'>Install the #1 rated cart drawer app for Shopify and start increasing conversions, upsells, and average order value.</p>
-                            <div className='flex'>
-                                <Button variant='pill' className='mx-auto' icon="https://hubsyntax.com/cart-images/buttonIcon.png">Start Free Trial</Button>
-                            </div>                        </div>
-                        <div className='block md:flex justify-between gap-[20px] lg:block'>
-                            <div className=' mb-[20px]'>
-                                <h3 className='text-[30px] font-[600] leading-[40px] mb-[10px]'>Latest Articles</h3>
-                                <img src="https://hubsyntax.com/cart-images/Rectangle 240648383.svg" alt="" className=' mb-[15px] w-full' />
-                                <h3 className='text-[20px] font-[600] mb-[5px]'>Best Cart Drawer Features for Higher Conversions</h3>
-                                <p className='text-[14px]'>5 min read</p>
-                            </div>
-                            <div>
-                                <h3 className='text-[30px] font-[600] leading-[40px] mb-[10px]'>Latest Articles</h3>
-                                <img src="https://hubsyntax.com/cart-images/Rectangle 240648383 (1).svg" alt="" className=' mb-[15px]  w-full' />
-                                <h3 className='text-[20px] font-[600] mb-[5px]'>Shopify Upsell Strategies That Actually Work</h3>
-                                <p className='text-[14px]'>5 min read</p>
-                            </div>
                         </div>
                     </div>
                 </div>
