@@ -591,6 +591,88 @@ export const blogPosts = [
         type: "p",
         text: "Customers often add another item to avoid paying shipping fees, resulting in a higher AOV.",
       },
+      { type: "h2", text: "5. Bundle and Package Deals" },
+      {
+        type: "p",
+        text: "Product bundling combines multiple related products into a single package at a discounted price. Bundles remove the guesswork while offering better value, making it easier for shoppers to purchase multiple items at once rather than individually.",
+      },
+      {
+        type: "p",
+        text: "Cart Plus allows merchants to create attractive product bundles that provide better value than purchasing items individually.",
+      },
+      {
+        type: "p",
+        text: "For example, A skincare bundle containing cleanser, toner, and moisturizer at a discounted package price. Instead of purchasing a single product, customers choose the bundle because it offers greater value.",
+      },
+      { type: "h2", text: "6. Quantity-Based Discounts" },
+      {
+        type: "p",
+        text: "Price is one of the most powerful factor of purchasing behavior. When customers see real savings in buying more units, they often increase their order quantity to maximize value and reduce future purchasing needs.",
+      },
+      {
+        type: "p",
+        text: "Cart Plus supports volume discounts that reward bulk purchases.",
+      },
+      {
+        type: "list-plain",
+        items: [
+          {
+            bold: "Example",
+          },
+        ],
+      },
+      {
+        type: "ul",
+        items: ["Buy 2, Save 10%", "Buy 3, Save 15%", "Buy 5, Save 20%"],
+      },
+      { type: "h2", text: "7. Cart Drawer Upselling" },
+      {
+        type: "p",
+        text: "Shoppers today value convenience and speed. Traditional upselling methods can be annoying because they take people away from the page they are looking at. A cart drawer keeps customers engaged while presenting additional offers.",
+      },
+      {
+        type: "p",
+        text: "To enhance the shopping experience, Cart Plus uses a slide-out cart drawer to present targeted offers.",
+      },
+      {
+        type: "p",
+        text: "Customers can review recommendations without leaving the current page.",
+      },
+      { type: "h2", text: "8. Limited-Time Checkout Offers" },
+      {
+        type: "p",
+        text: "Creating urgency helps customers to make faster purchasing decisions. When shoppers see an opportunity as time-sensitive, they are more likely to act immediately rather than postpone or reconsider their purchase.",
+      },
+      {
+        type: "p",
+        text: "Example: “Add this item now and save 20% in 15 minutes.”",
+      },
+      {
+        type: "p",
+        text: "‘’Free gift added to orders placed today.’’",
+      },
+      { type: "h2", text: "9. Personalized Cart Experiences" },
+      {
+        type: "p",
+        text: "Today, customers are getting countless marketing messages every day. Generic promotions often go unnoticed, while personalized experiences make customers feel understood and valued. Tailored recommendations significantly increase the likelihood of additional purchases.",
+      },
+      {
+        type: "p",
+        text: "Cart Plus customizes offers based on customer behavior, previous purchases, and cart contents.",
+      },
+      { type: "h2", text: "10. Post-Purchase Upsells" },
+      {
+        type: "p",
+        text: "Many businesses focus exclusively on increasing order value before checkout, but the period immediately after a purchase is equally valuable. Customers have already demonstrated trust in the brand, making them more open to relevant supplementary offers.",
+      },
+      {
+        type: "p",
+        text: "Because the recommendations appear at the moment of strongest purchase intent, customers are more likely to accept additional offers",
+      },
+      {
+        type: "p",
+        text: "For example, a customer who buys a camera receives an offer for a memory card or carrying case.",
+      },
     ],
   },
   {
