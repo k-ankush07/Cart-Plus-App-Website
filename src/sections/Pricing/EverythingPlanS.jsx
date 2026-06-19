@@ -2,13 +2,15 @@ import React from 'react'
 import Container from '../../components/Container'
 
 const features = [
-    { name: 'Smart Upsells', free: false, pro: true, scale: true },
-    { name: 'Cart Progress Bar', free: false, pro: true, scale: true },
-    { name: 'Sticky Cart Drawer', free: false, pro: true, scale: true },
-    { name: 'Custom Branding', free: false, pro: true, scale: true },
-    { name: 'Mobile Optimization', free: false, pro: true, scale: true },
-    { name: 'Cart Analytics', free: false, pro: true, scale: true },
-    { name: 'A/B Testing', free: false, pro: true, scale: true },
+    { name: 'Monthly Order', free: 'Dev & Partner Only', pro: 200, scale: 500, advance: 1000 },
+    { name: '14-day free trial', free: false, pro: true, scale: true, advance: true },
+    { name: 'Design settings', free: false, pro: true, scale: true, advance: true },
+    { name: 'Announcements module', free: false, pro: true, scale: true, advance: true },
+    { name: 'Upsells & cross-sells', free: false, pro: true, scale: true, advance: true },
+    { name: 'Reward progress bar', free: false, pro: true, scale: true, advance: true },
+    { name: 'Mobile Optimization', free: false, pro: true, scale: true, advance: true },
+    { name: 'Add-ons module', free: false, pro: true, scale: true, advance: true },
+    { name: 'Custom HTML & CSS', free: false, pro: true, scale: true, advance: true },
 ]
 
 const CHECK = 'https://hubsyntax.com/cart-images/checkSign.svg'
@@ -24,6 +26,18 @@ function Icon({ value }) {
             className="mx-auto w-[25px] h-[20px] lg:w-[20px] lg:h-[25px]"
         />
     )
+}
+
+// Renders a string/number as text, or falls back to the check/cross icon for booleans
+function Cell({ value }) {
+    if (typeof value === 'string' || typeof value === 'number') {
+        return (
+            <span className="text-white text-[14px] lg:text-[16px] font-medium">
+                {value}
+            </span>
+        )
+    }
+    return <Icon value={value} />
 }
 
 export default function EverythingPlan() {
@@ -79,9 +93,9 @@ export default function EverythingPlan() {
                                     </p>
                                 </th>
 
-                                {/* Scale */}
+                                {/* Advanced */}
                                 <th className='py-[15px] lg:py-[28px] px-[20px] lg:px-[38px] text-center'>
-                                    <p className='text-white font-bold text-[20px] lg:text-[25px] mb-1'>Scale</p>
+                                    <p className='text-white font-bold text-[20px] lg:text-[25px] mb-1'>Advanced</p>
                                     <p className='text-white font-[600] text-[25px] lg:text-[38px] leading-none flex items-end justify-center'>
                                         $14.99{' '}
                                         <span className='text-[14px] lg:text-[20px] font-normal opacity-70'>/lifetime</span>
@@ -100,16 +114,16 @@ export default function EverythingPlan() {
                                         {feature.name}
                                     </td>
                                     <td className='px-[20px] lg:px-[38px] py-[15px] lg:py-[20px] text-center'>
-                                        <Icon value={feature.free} />
+                                        <Cell value={feature.free} />
                                     </td>
                                     <td className='px-[20px] lg:px-[38px] py-[15px] lg:py-[20px] text-center bg-[#46285C]'>
-                                        <Icon value={feature.pro} />
+                                        <Cell value={feature.pro} />
                                     </td>
                                     <td className='px-[20px] lg:px-[38px] py-[15px] lg:py-[20px] text-center'>
-                                        <Icon value={feature.scale} />
+                                        <Cell value={feature.scale} />
                                     </td>
                                     <td className='px-[20px] lg:px-[38px] py-[15px] lg:py-[20px] text-center'>
-                                        <Icon value={feature.scale} />
+                                        <Cell value={feature.advance} />
                                     </td>
                                 </tr>
                             ))}
