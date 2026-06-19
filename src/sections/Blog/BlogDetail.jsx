@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import Container from '../../components/Container'
 import Button from '../../components/Button'
 import { blogPosts, slugify } from '../../components/data/Blogdata'
+import SEO from '../../components/SEO'
 
 function renderBlock(block, idx) {
   switch (block.type) {
@@ -95,6 +96,10 @@ export default function BlogDetail() {
   if (!post) {
     return (
       <section className="relative">
+        <SEO
+          title="Blog Post Not Found – CartPlus"
+          description="The blog post you're looking for doesn't exist or may have been moved. Browse our full library of Shopify growth and conversion tips."
+        />
         <Container className="relative z-10 py-[80px] text-white text-center">
           <h1 className="font-bold text-[40px] mb-4">Blog post not found</h1>
           <Link to="/blog" className="text-[#512B6C] underline">
@@ -107,6 +112,11 @@ export default function BlogDetail() {
 
   return (
     <section className="relative">
+       <SEO
+        title={`${post.title} – CartPlus Blog`}
+        description={post.desc}
+        url={`https://hubsyntax.com/blog/${slugify(post.title)}`}
+      />
       <Container className="relative z-10 py-[80px] max-[540px]:py-[50px] text-white">
         <div className='mx-auto max-w-[1000px] max-[540px]:mb-[40px] mb-[80px]'>
           <h1 className="font-bold text-center text-[50px] max-[540px]:text-[34px] max-[540px]:leading-[40px] leading-[70px] mb-[10px]">
