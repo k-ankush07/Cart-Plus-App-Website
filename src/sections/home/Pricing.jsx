@@ -25,9 +25,9 @@ const plans = [
     name: 'Starter',
     badge: 'Popular',
     subtitle: 'For growing stores',
-    orders: '0-200 ORDERS',
+    orders: '200 ORDERS',
     showDivider: true,
-    price: '$29.99',
+    price: '$4.99',
     period: '/month',
     features: [
       '3 cart drawers',
@@ -44,9 +44,9 @@ const plans = [
     name: 'Growth',
     badge: 'Best value',
     subtitle: 'For Scaling businesses',
-    orders: '201-500 ORDERS',
+    orders: '500 ORDERS',
     showDivider: false,
-    price: '$34.99',
+    price: '$9.99',
     period: '/month',
     features: [
       'Unlimited cart drawers',
@@ -60,6 +60,27 @@ const plans = [
     ],
     cta: 'Upgrade to Growth',
   },
+  {
+    id: 4,
+    name: 'Advanced',
+    badge: 'Best value',
+    subtitle: 'For high-volume businesses',
+    orders: '1000 ORDERS',
+    showDivider: false,
+    price: '$14.99',
+    period: '/month',
+    features: [
+      'Unlimited cart drawers',
+      'Everything in Starter',
+      'Sticky cart button',
+      'Express payments',
+      'Discount codes',
+      'Add-ons & subscriptions',
+      'Custom HTML blocks',
+      'Live chat support',
+    ],
+    cta: 'Upgrade to Advanced',
+  },
 ]
 
 // Badge background when a card is NOT active (its own default tint)
@@ -67,16 +88,17 @@ const badgeIdleClass = {
   1: '',
   2: 'bg-[#9D70CC] text-[#ffffff]',
   3: 'bg-[#9D70CC] text-[#ffffff]',
+  4: 'bg-[#FF6B00] text-[#ffffff]',
 }
 
 export default function Pricing({ showGradient }) {
   const [hoveredId, setHoveredId] = useState(null)
-  const DEFAULT_ACTIVE_ID = 2 // Starter is highlighted by default
+  const DEFAULT_ACTIVE_ID = 2
 
   return (
     <section className='relative'>
       <Container className='py-[40px] max-[540px]:py-[25px] relative z-10'>
-        <div className='px-[0px] lg:px-[78px] max-[840px]:pb-[0] pb-[20px]'>
+        <div>
           <div className='text-center max-[540px]:mb-[20px] mb-[40px]'>
             <h2 className='font-bold max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[15px] mb-[20px]'>
               Simple, Transparent pricing
@@ -86,7 +108,7 @@ export default function Pricing({ showGradient }) {
             </p>
           </div>
 
-          <div className='grid max-[768px]:grid-cols-1 max-[840px]:grid-cols-2 grid-cols-3 gap-[50px] md:gap-[15px] lg:gap-[30px] items-stretch max-[540px]:pt-[0] pt-[20px]'>
+          <div className='grid max-[768px]:grid-cols-1 max-[840px]:grid-cols-2 grid-cols-4 gap-[50px] md:gap-[15px] lg:gap-[30px] items-stretch max-[540px]:pt-[0] pt-[20px]'>
             {plans.map((plan) => {
               const isActive = hoveredId ? hoveredId === plan.id : plan.id === DEFAULT_ACTIVE_ID
 
@@ -95,7 +117,7 @@ export default function Pricing({ showGradient }) {
                   key={plan.id}
                   onMouseEnter={() => setHoveredId(plan.id)}
                   onMouseLeave={() => setHoveredId(null)}
-                  className={`relative rounded-[10px] py-[15px] lg:py-[30px] px-[15px] lg:px-[40px] flex flex-col justify-between
+                  className={`relative rounded-[10px] py-[15px] lg:py-[30px] px-[15px] lg:px-[20px] flex flex-col justify-between
                     border transition-all duration-300 ease-out
                     ${isActive
                       ? 'bg-[#512B6C] text-white border-transparent -mt-[20px] -mb-[20px] shadow-xl z-10'

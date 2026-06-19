@@ -2,12 +2,12 @@ import React from 'react'
 import Container from '../../components/Container'
 
 const features = [
-    { name: 'Smart Upsells', free: true, pro: true, scale: true },
-    { name: 'Cart Progress Bar', free: true, pro: true, scale: true },
-    { name: 'Sticky Cart Drawer', free: true, pro: true, scale: true },
+    { name: 'Smart Upsells', free: false, pro: true, scale: true },
+    { name: 'Cart Progress Bar', free: false, pro: true, scale: true },
+    { name: 'Sticky Cart Drawer', free: false, pro: true, scale: true },
     { name: 'Custom Branding', free: false, pro: true, scale: true },
-    { name: 'Mobile Optimization', free: true, pro: true, scale: true },
-    { name: 'Cart Analytics', free: true, pro: true, scale: true },
+    { name: 'Mobile Optimization', free: false, pro: true, scale: true },
+    { name: 'Cart Analytics', free: false, pro: true, scale: true },
     { name: 'A/B Testing', free: false, pro: true, scale: true },
 ]
 
@@ -74,6 +74,15 @@ export default function EverythingPlan() {
                                 <th className='py-[15px] lg:py-[28px] px-[20px] lg:px-[38px] text-center'>
                                     <p className='text-white font-bold text-[20px] lg:text-[25px] mb-1'>Scale</p>
                                     <p className='text-white font-[600] text-[25px] lg:text-[38px] leading-none flex items-end justify-center'>
+                                        $9.99{' '}
+                                        <span className='text-[14px] lg:text-[20px] font-normal opacity-70'>/lifetime</span>
+                                    </p>
+                                </th>
+
+                                {/* Scale */}
+                                <th className='py-[15px] lg:py-[28px] px-[20px] lg:px-[38px] text-center'>
+                                    <p className='text-white font-bold text-[20px] lg:text-[25px] mb-1'>Scale</p>
+                                    <p className='text-white font-[600] text-[25px] lg:text-[38px] leading-none flex items-end justify-center'>
                                         $14.99{' '}
                                         <span className='text-[14px] lg:text-[20px] font-normal opacity-70'>/lifetime</span>
                                     </p>
@@ -95,6 +104,9 @@ export default function EverythingPlan() {
                                     </td>
                                     <td className='px-[20px] lg:px-[38px] py-[15px] lg:py-[20px] text-center bg-[#46285C]'>
                                         <Icon value={feature.pro} />
+                                    </td>
+                                    <td className='px-[20px] lg:px-[38px] py-[15px] lg:py-[20px] text-center'>
+                                        <Icon value={feature.scale} />
                                     </td>
                                     <td className='px-[20px] lg:px-[38px] py-[15px] lg:py-[20px] text-center'>
                                         <Icon value={feature.scale} />

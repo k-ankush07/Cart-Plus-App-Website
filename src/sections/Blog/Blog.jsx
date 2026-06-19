@@ -4,7 +4,7 @@ import Container from '../../components/Container'
 import { blogPosts, slugify } from '../../components/data/Blogdata'
 
 export default function Blog() {
-  
+
   return (
     <section>
       <Container className="relative z-10 py-[40px] max-[540px]:py-[25px]">
@@ -20,7 +20,7 @@ export default function Blog() {
               <img
                 src={post.img}
                 alt={post.title}
-                className="w-full h-[250px] object-cover"
+                className="w-full h-[250px] object-cover object-left"
               />
               <div className="p-[20px] flex flex-col flex-1">
                 <p className="text-[14px] mb-[20px]">{post.date}</p>

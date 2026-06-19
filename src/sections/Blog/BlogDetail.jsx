@@ -124,7 +124,7 @@ export default function BlogDetail() {
               <img
                 src={post.img}
                 alt={post.title}
-                className="w-full rounded-xl mb-[30px] object-cover"
+                className="w-full rounded-xl mb-[30px]"
               />
             )}
             {post.content.map((block, idx) => renderBlock(block, idx))}

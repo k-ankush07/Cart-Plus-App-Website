@@ -12,7 +12,7 @@ export const blogPosts = [
     title:
       "How to Reduce Cart Abandonment Rate and Maximize E-commerce Conversions",
     desc: "In e-commerce, one of the most critical challenges businesses face is the high rate at which potential customers leave without completing their purchase. This behavior is measured through the Cart Abandonment Rate, which represents the percentage of users who add products to their cart but exit the website before finishing the checkout process.",
-    img: "https://hubsyntax.com/cart-images/Rectangle 240648321.svg",
+    img: "https://cartplus.io/cartplus-img/reducecartabandonmentratefirst.png",
     content: [
       {
         type: "p",
@@ -191,7 +191,7 @@ export const blogPosts = [
     title:
       "Customize Your Shopify Cart Drawer for Better Conversions and Higher AOV",
     desc: "Your cart drawer plays a major role in the customer journey. While many Shopify stores focus on product pages and checkout optimization, the cart drawer often becomes the deciding factor between an abandoned cart and a completed purchase.",
-    img: "https://hubsyntax.com/cart-images/Rectangle 240648321.svg",
+    img: "https://cartplus.io/cartplus-img/customersabandoncheckout.png",
     content: [
       {
         type: "p",
@@ -494,7 +494,7 @@ export const blogPosts = [
     title:
       "10 Proven Ways Cart Plus Increases Your Store's Average Order Value",
     desc: "Average Order Value (AOV) is one of the most important metrics in e-commerce because it measures how much customers spend per transaction. While many businesses focus heavily on acquiring new customers, increasing AOV allows you to generate more revenue from your existing traffic. Cart Plus is designed to help merchants maximize every purchase opportunity by strategically presenting relevant offers, incentives, and recommendations throughout the shopping journey.",
-    img: "https://hubsyntax.com/cart-images/Rectangle 240648321.svg",
+    img: "https://cartplus.io/cartplus-img/cartplustraditional.png",
     content: [
       {
         type: "p",
@@ -681,7 +681,7 @@ export const blogPosts = [
     date: "May 25, 2026",
     title: "How to Add Free Shipping Progress Bars to Your Shopify Store? ",
     desc: "Free shipping is one of the biggest factors affecting online purchasing decisions. In fact, many shoppers are willing to add extra products to their carts when they know they are close to qualifying for free shipping. This is where a Free Shipping Progress Bar makes a significant difference for Shopify store owners.",
-    img: "https://hubsyntax.com/cart-images/Rectangle 240648321.svg",
+    img: "https://cartplus.io/cartplus-img/10provenwayscart%20plus.png",
     content: [
       {
         type: "p",
@@ -1000,7 +1000,7 @@ export const blogPosts = [
     date: "May 25, 2026",
     title: "Cart Plus vs Traditional Cart Page: Which One Performs Better",
     desc: "In e-commerce, every step between adding a product to the cart and completing a purchase can impact conversion rates. Cart page is the final stage before checkout, where shoppers review their selected items and decide whether to complete their purchase. Many of the merchants are replacing traditional cart pages due to its standred features from a long time and replacing it with advanced cart solutions like Cart Plus, which offer features such as slide-out cart drawers, upsell recommendations, free shipping progress bars, and faster checkout experiences.",
-    img: "https://hubsyntax.com/cart-images/Rectangle 240648321.svg",
+    img: "https://cartplus.io/cartplus-img/freeshippingprogress.png",
     content: [
       {
         type: "p",
@@ -1163,7 +1163,7 @@ export const blogPosts = [
     date: "May 25, 2026",
     title: "Why Customers Abandon Checkout (And 12 Proven Ways to Fix It) ",
     desc: "You work hard to attract visitors to your online store, but what happens when shoppers leave at the final step before purchasing? Checkout abandonment is one of the biggest conversion killers in ecommerce, with studies showing that nearly 70% of online shopping carts are abandoned before a transaction is completed.",
-    img: "https://hubsyntax.com/cart-images/Rectangle 240648321.svg",
+    img: "https://cartplus.io/cartplus-img/customizeyourshopify.png",
     content: [
       {
         type: "p",
@@ -1427,7 +1427,7 @@ export const blogPosts = [
         type: "p",
         text: "Even when your checkout process is smooth, some shoppers will leave before placing an order. That doesn't always mean the sale is lost. The good news is that many of these customers can be brought back with timely follow-ups and targeted reminders.",
       },
-       {
+      {
         type: "list-plain",
         items: [
           {
@@ -1456,7 +1456,7 @@ export const blogPosts = [
         type: "p",
         text: "Tracking checkout performance helps you identify where customers drop off and where improvements can increase conversions.",
       },
-       {
+      {
         type: "list-plain",
         items: [
           {
