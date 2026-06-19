@@ -18,6 +18,12 @@ function renderBlock(block, idx) {
           {block.text}
         </h3>
       )
+    case 'h4':
+      return (
+        <h4 key={idx} className="font-semibold text-[18px] leading-[1.4] mb-[10px] mt-[20px]">
+          {block.text}
+        </h4>
+      )
     case 'ul':
       return (
         <ul key={idx} className="list-disc pl-[22px] mb-[16px] space-y-[8px] text-[16px] leading-[26px]">
