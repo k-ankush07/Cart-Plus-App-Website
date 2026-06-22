@@ -55,16 +55,16 @@ export default function HubCartFeatures() {
 
     return (
         <section className='relative'>
-            <div className='absolute z-0 hidden xl:block'>
+            {/* <div className='absolute z-0 hidden xl:block'>
                 <img src="https://hubsyntax.com/cart-images/Mask group (14).svg" alt="" loading="lazy" decoding="async" />
-            </div>
+            </div> */}
 
             <Container className='relative z-10 py-[40px] max-[540px]:py-[25px]'>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-[40px] lg:gap-[80px] items-center'>
 
                     {/* Left - Accordion */}
                     <div>
-                        <h2 className='font-bold  max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[10px] mb-[20px]'>HubCart Features</h2>
+                        <h2 className='font-bold  max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[10px] mb-[20px]'>Cart Plus Features</h2>
                         <div className='flex flex-col'>
                             {features.map((feature) => (
                                 <div key={feature.id} className=' py-[15px]'>
@@ -75,7 +75,7 @@ export default function HubCartFeatures() {
                                         <span className='text-[24px] leading-[30px] font-semibold'>{feature.title}</span>
                                         <span className='flex items-center justify-center'>
                                             <img
-                                                src='https://hubsyntax.com/cart-images/DropDown.png'
+                                                src='https://cartplus.io/cartplus-img/Vector (2).svg'
                                                 alt='toggle'
                                                 loading='lazy'
                                                 decoding='async'
@@ -85,7 +85,7 @@ export default function HubCartFeatures() {
                                         </span>
                                     </button>
                                     {openId === feature.id && (
-                                        <p className='text-[16px] leading-[26px] text-white/70 pt-[10px]'>
+                                        <p className='text-[16px] leading-[26px]  pt-[10px]'>
                                             {feature.description}
                                         </p>
                                     )}
@@ -97,7 +97,7 @@ export default function HubCartFeatures() {
                     {/* Right - Image */}
                     <div className='flex justify-end items-start w-[80%] max-[430px]:w-[100%] max-[540px]:w-[90%] mx-auto md:w-full'>
                         <img
-                            src='https://hubsyntax.com/cart-images/CartFeaturess.png'
+                            src='https://cartplus.io/cartplus-img/Group 1707480047.svg'
                             alt='HubCart Features'
                             loading='lazy'
                             decoding='async'
@@ -107,9 +107,9 @@ export default function HubCartFeatures() {
 
                 </div>
             </Container>
-            <div className='absolute z-0 right-25 top-0 hidden xl:block'>
+            {/* <div className='absolute z-0 right-25 top-0 hidden xl:block'>
                 <img src="https://hubsyntax.com/cart-images/Mask group (16).svg" alt="" loading="lazy" decoding="async" />
-            </div>
+            </div> */}
         </section>
     )
 }
