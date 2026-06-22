@@ -103,7 +103,7 @@ export default function Pricing({ showGradient }) {
             </p>
           </div>
 
-          <div className='grid max-[768px]:grid-cols-1 max-[840px]:grid-cols-2 grid-cols-4 gap-[50px] md:gap-[50px] lg:gap-[30px] items-stretch max-[540px]:pt-[0] pt-[20px] px-[0] md:px-[40px]'>
+          <div className='grid max-[768px]:grid-cols-1 max-[840px]:grid-cols-2 grid-cols-4 gap-[50px] md:gap-[50px] lg:gap-[30px] items-stretch max-[540px]:pt-[0] pt-[20px] px-[0] lg:px-[40px]'>
             {plans.map((plan) => {
               const isActive = hoveredId ? hoveredId === plan.id : plan.id === DEFAULT_ACTIVE_ID
 
