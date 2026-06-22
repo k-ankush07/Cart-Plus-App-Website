@@ -18,7 +18,7 @@ export default function About() {
       />
       <BannerSection
         heading='Built for merchants who want to turn more carts into revenue.'
-        paragraph='We built HubCart to help Shopify merchants turn more carts into revenue with a smoother, more modern shopping experience. Our goal is simple: increase conversions, raise average order value, and make checkout feel effortless for every customer.'
+        paragraph='We built Cart Plus to help Shopify merchants turn more carts into revenue with a smoother, more modern shopping experience. Our goal is simple: increase conversions, raise average order value, and make checkout feel effortless for every customer.'
         buttonText='Try Demo'
         img='https://hubsyntax.com/cart-images/aboutBanner.svg'
       />

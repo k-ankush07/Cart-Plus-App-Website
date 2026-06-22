@@ -67,7 +67,7 @@ export default function ContactForm() {
                   <div>
                     <h3 className='font-semibold text-[18px] lg:text-[20px]'>Boost Conversions & Revenue</h3>
                     <p className='text-[15px] lg:text-[16px] mt-1'>
-                      Discover how HubCart can reduce cart abandonment, increase average order value, and help turn more visitors into customers.
+                      Discover how Cart Plus can reduce cart abandonment, increase average order value, and help turn more visitors into customers.
                     </p>
                   </div>
                 </div>

@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
       </Container>
       <p className="my-[20px] text-[14px] text-center border-t border-t-[#EFEFEF] pt-[20px] relative z-10 text-[#000000] font-[600]">
-        © {year} HubCart. All rights reserved.
+        © {year} Cart Plus. All rights reserved.
       </p>
     </footer>
   )

@@ -47,10 +47,10 @@ export default function Features() {
       <Container className='relative'>
         <div className='text-center'>
           <h2 className='font-semibold max-[540px]:text-[35px] text-[45px] lg:text-[55px] max-[540px]:leading-[45px] leading-[60px]'>
-            Why Merchants Choose HubCart
+            Why Merchants Choose Cart Plus
           </h2>
           <p className='text-[18px] max-[540px]:text-[16px] py-[20px] max-[540px]:py-[16px]'>
-            HubCart works behind the scenes to increase your revenue automatically — from cart to checkout.
+            Cart Plus works behind the scenes to increase your revenue automatically — from cart to checkout.
           </p>
         </div>
 

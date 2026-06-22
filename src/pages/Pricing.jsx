@@ -39,7 +39,7 @@ export default function Pricing() {
       />
       <BannerSection
         heading='Build to Turn More Carts Into Sales'
-        paragraph='We created HubCart after seeing thousands of Shopify stores lose sales because of outdated cart experiences. Our goal is simple help merchants increase conversions, drive more upsells, and boost average order value with a faster, smarter cart experience.'
+        paragraph='We created Cart Plus after seeing thousands of Shopify stores lose sales because of outdated cart experiences. Our goal is simple help merchants increase conversions, drive more upsells, and boost average order value with a faster, smarter cart experience.'
         buttonText='Try Demo'
         img='https://hubsyntax.com/cart-images/Group 1707480290.svg'
       />

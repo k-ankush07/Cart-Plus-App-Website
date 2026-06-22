@@ -6,7 +6,7 @@ const stats = [
         id: 1,
         image: 'https://cartplus.io/cartplus-img/Vector.svg',
         value: '90,000+',
-        label: 'Brands Using HubCart',
+        label: 'Brands Using Cart Plus',
     },
     {
         id: 2,
@@ -30,7 +30,7 @@ export default function RevenueGrowth() {
                     Scalable Revenue Growth
                 </h2>
                 <p className='max-[540px]:text-[16px] text-[18px] max-[540px]:leading-[22px] leading-[28px] text-center max-[540px]:max-w-full max-w-[930px] m-auto max-[540px]:mb-[20px] mb-[30px]'>
-                    Join thousands of Shopify brands using HubCart to increase conversions, grow average order
+                    Join thousands of Shopify brands using Cart Plus to increase conversions, grow average order
                     value, and drive more revenue automatically.
                 </p>
                 <div className="p-[1px] rounded-[15px] bg-[linear-gradient(264.46deg,rgba(255,255,255,0)_-14.65%,rgba(149,0,255,0.2)_32.08%)]">
