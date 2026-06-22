@@ -6,13 +6,13 @@ import Container from './Container'
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const linkBase = 'text-[18px] text-[#FFFFFF] font-semibold'
+  const linkBase = 'text-[18px] text-[#000000] font-[600]'
 
   const linkClass = ({ isActive }) =>
-    `${linkBase} ${isActive ? 'border-b-2 border-white pb-1' : 'opacity-80 hover:opacity-100'}`
+    `${linkBase} ${isActive ? 'border-b-2 border-black pb-1' : 'opacity-80 hover:opacity-100'}`
 
   const mobileLinkClass = ({ isActive }) =>
-    `text-[18px] max-[540px]:text-[16px] text-[#FFFFFF] font-semibold block py-4 border-b border-white/10 transition-all duration-200 ${isActive ? 'opacity-100 pl-2 border-l-2 border-l-white' : 'opacity-70 hover:opacity-100 hover:pl-2'
+    `text-[18px] max-[540px]:text-[16px] text-[#000000] font-[600] block py-4 border-b border-white/10 transition-all duration-200 ${isActive ? 'opacity-100 pl-2 border-l-2 border-l-white' : 'opacity-70 hover:opacity-100 hover:pl-2'
     }`
 
   return (
@@ -23,9 +23,9 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
-              src="https://hubsyntax.com/cart-images/HUBCART.svg"
-              alt="HubCart"
-              className="h-[37px] max-[540px]:h-[30px] w-auto"
+              src="https://cartplus.io/cartplus-img/websiteLogo.png"
+              alt="CartPlus"
+              className="h-[51px] max-[540px]:h-[30px] w-auto"
             />
           </Link>
 
@@ -35,13 +35,13 @@ export default function Header() {
             <NavLink to="/pricing" className={linkClass}>Pricing</NavLink>
             <NavLink to="/about" className={linkClass}>About us</NavLink>
             {/* <NavLink to="/casestudie" className={linkClass}>Case studies </NavLink> */}
-            <NavLink to="/blog" className={linkClass}>Blog </NavLink>
+            {/* <NavLink to="/blog" className={linkClass}>Blog </NavLink> */}
             <NavLink to="/contact" className={linkClass}>Contact us</NavLink>
           </nav>
 
           {/* Desktop Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <Button>Install HubCart</Button>
+            <Button>Install Now</Button>
           </div>
 
           {/* Hamburger Button (mobile only) */}
@@ -94,13 +94,13 @@ export default function Header() {
           <NavLink to="/pricing" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>Pricing</NavLink>
           <NavLink to="/about" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>About us</NavLink>
           {/* <NavLink to="/casestudie" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>Case Studies</NavLink> */}
-          <NavLink to="/blog" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>Blog </NavLink>
+          {/* <NavLink to="/blog" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>Blog </NavLink> */}
           <NavLink to="/contact" className={mobileLinkClass} onClick={() => setMenuOpen(false)}>Contact us</NavLink>
         </nav>
 
         {/* Drawer Footer Button */}
         <div className="absolute bottom-10 left-0 w-full px-6">
-          <Button className="w-full text-center justify-center">Install HubCart</Button>
+          <Button className="w-full text-center justify-center">Install Now</Button>
         </div>
       </div>
     </>

@@ -40,7 +40,7 @@ export default function Features() {
   }
 
   return (
-    <section className='py-[40px] max-[540px]:py-[25px] text-white relative'>
+    <section className='py-[40px] max-[540px]:py-[25px]  relative'>
       <Container>
         <div className='text-center'>
           <h2 className='font-semibold max-[540px]:text-[35px] text-[45px] lg:text-[55px] max-[540px]:leading-[45px] leading-[60px]'>
@@ -67,7 +67,7 @@ export default function Features() {
                     className='w-full flex items-center justify-between py-[10px] text-left group cursor-pointer'
                   >
                     <h3
-                      className={`font-semibold text-[28px] max-[540px]:text-[22px] leading-[32px] transition-colors duration-200 ${isActive ? 'text-[#ffffff]' : 'text-white'
+                      className={`font-semibold text-[28px] max-[540px]:text-[22px] leading-[32px] transition-colors duration-200 ${isActive ? 'text-[#000000]' : 'text-[#000000]'
                         }`}
                     >
                       {feature.title}
@@ -85,7 +85,7 @@ export default function Features() {
                       >
                         <path
                           d="M6 9L12 15L18 9"
-                          stroke={isActive ? '#ffffff' : 'rgba(255,255,255,0.5)'}
+                          stroke={isActive ? 'black' : 'black'}
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -99,7 +99,7 @@ export default function Features() {
                     className={`overflow-hidden transition-all duration-350 ease-in-out ${isActive ? 'max-h-[200px] pb-[18px]' : 'max-h-0'
                       }`}
                   >
-                    <p className='text-[18px] max-[540px]:text-[16px] my-[10px] leading-[28px] max-[540px]:leading-[22px] max-w-full md:max-w-[415px] text-white/75'>
+                    <p className='text-[18px] max-[540px]:text-[16px] my-[10px] leading-[28px] max-[540px]:leading-[22px] max-w-full md:max-w-[415px] text-black'>
                       {feature.description}
                     </p>
                     <a href={feature.href} className='inline-block text-[16px] underline'>

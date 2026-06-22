@@ -2,10 +2,11 @@ import React from 'react'
 
 const variants = {
   primary: 'bg-black text-white hover:bg-gray-800',
-  secondary: 'bg-white text-black border border-gray-300 hover:bg-gray-100',
+  secondary:
+    'bg-[linear-gradient(180deg,#000000_0%,#9500FF_174.83%)] text-white hover:opacity-90',
   ghost: 'bg-transparent text-black border hover:bg-gray-100',
   pill: 'bg-white text-black hover:bg-gray-100 rounded-full justify-center',
-}
+};
 
 const sizes = {
   sm: 'px-3 py-1.5 text-xs',
@@ -28,7 +29,7 @@ export default function Button({
   return (
     <button
       type={type}
-      className={`group rounded-full font-bold transition-colors cursor-pointer text-[18px] max-[540px]:text-[16px] leading-[20px] inline-flex items-center gap-[15px] ${variantClass} ${sizeClass} ${className}`}
+      className={`group rounded-full font-[600] transition-colors cursor-pointer text-[18px] max-[540px]:text-[16px] leading-[20px] inline-flex items-center gap-[15px] ${variantClass} ${sizeClass} ${className}`}
       {...props}
     >
       {children}

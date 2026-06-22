@@ -8,7 +8,7 @@ import HubCartFeatures from '../sections/home/HubCartFeatures'
 import Pricing from '../sections/home/Pricing'
 import FAQ from '../sections/home/FAQ'
 import CTA from '../sections/home/CTA'
-import SEO  from '../components/SEO'
+import SEO from '../components/SEO'
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
         heading='Boost Your Revenue with Smart Checkout & Upsell Tools'
         paragraph='Increase AOV and revenue with smart upsells, rewards, and a friction-free checkout experience.'
         buttonText='Try Demo'
-        img='https://hubsyntax.com/cart-images/mainImage.svg'
+        img='https://cartplus.io/cartplus-img/Group 1707480029.svg'
       />
       <Features />
       <CustomizeCart />

@@ -15,7 +15,7 @@ export default function BannerSection({heading, paragraph, buttonText, img}) {
                            {paragraph}
                         </p>
                         <div>
-                            <Button icon="https://hubsyntax.com/cart-images/buttonIcon.png">{buttonText}</Button>
+                            <Button icon="https://cartplus.io/cartplus-img/Vector (6).png">{buttonText}</Button>
                         </div>
                     </div>
                     <div className='w-full'>

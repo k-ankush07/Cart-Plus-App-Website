@@ -1,7 +1,6 @@
 const preloadImages = [
-  "https://hubsyntax.com/cart-images/mainImage.svg",
-  "https://hubsyntax.com/cart-images/Mask group (111).svg",
-  "https://hubsyntax.com/cart-images/cartFeatures.png",
-]
+  "https://cartplus.io/cartplus-img/Group 1707480029.svg",
+  
+];
 
-export default preloadImages
+export default preloadImages;
