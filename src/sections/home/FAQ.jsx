@@ -55,9 +55,9 @@ export default function FAQ({ faqs: faqsProp = faqs }) {
                   <button
                     type="button"
                     onClick={() => setOpenIndex(isOpen ? -1 : i)}
-                    className="flex w-full items-center justify-between px-6 py-4 text-left cursor-pointer"
+                    className="flex w-full items-center justify-between max-[430px]:px-3 px-6 py-4 text-left cursor-pointer"
                   >
-                    <span className="text-[20px] font-[600] text-[#000000] leading-[32px]">{faq.q}</span>
+                    <span className="max-[430px]:text-[18px] text-[20px] font-[600] text-[#000000] max-[430px]:leading-[25px] leading-[32px]">{faq.q}</span>
                     <img
                       src={isOpen ? minusImg : plusImg}
                       alt={isOpen ? 'collapse' : 'expand'}
@@ -67,7 +67,7 @@ export default function FAQ({ faqs: faqsProp = faqs }) {
                     />
                   </button>
                   {isOpen && (
-                    <div className="px-6 pb-4 text-[18px] max-[540px]:text-[16px] max-[540px]:leading-[22px] leading-[28px] text-[#000000]">
+                    <div className="max-[430px]:px-3 px-6 pb-4 max-[430px]:text-[16px] text-[18px] max-[540px]:text-[16px] max-[540px]:leading-[22px] leading-[28px] text-[#000000]">
                       {faq.a}
                     </div>
                   )}
