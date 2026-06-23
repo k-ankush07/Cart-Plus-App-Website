@@ -3,22 +3,22 @@ import Container from '../../components/Container'
 
 const stats = [
     {
-        img: 'https://hubsyntax.com/cart-images/Group%201707480060.svg',
+        img: 'https://cartplus.io/cartplus-img/Group 1707480060.svg',
         value: '+18%',
         label: 'Average Order Value',
     },
     {
-        img: 'https://hubsyntax.com/cart-images/Group 1707480061.svg',
+        img: 'https://cartplus.io/cartplus-img/Group 1707480061.svg',
         value: '+22%',
         label: 'Cart Conversion Rate',
     },
     {
-        img: 'https://hubsyntax.com/cart-images/Group 1707480062.svg',
+        img: 'https://cartplus.io/cartplus-img/Group 1707480062.svg',
         value: '50k+',
         label: 'Upsells Generated',
     },
     {
-        img: 'https://hubsyntax.com/cart-images/Group 1707480063.svg',
+        img: 'https://cartplus.io/cartplus-img/Group 1707480063.svg',
         value: '99.9%',
         label: 'Uptime',
     },
@@ -33,10 +33,13 @@ export default function CartRevenue() {
                     {stats.map((stat) => (
                         <div
                             key={stat.label}
-                            className="flex items-center gap-4 px-5 py-5 rounded-[12px] bg-[#512B6C]"
+                            className="flex items-center gap-4 px-5 py-5 rounded-[12px] bg-[#F9F1FF]"
                         >
                             <div
-                                className="flex-shrink-0 w-[79px] h-[79px] bg-white rounded-full flex items-center justify-center"
+                                className="flex-shrink-0 w-[79px] h-[79px]  rounded-full flex items-center justify-center"
+                                style={{
+                                    background: 'linear-gradient(180deg, #000000 0%, #9500FF 174.83%)',
+                                }}
                             >
                                 <img
                                     src={stat.img}
@@ -46,7 +49,7 @@ export default function CartRevenue() {
 
                             {/* Text */}
                             <div>
-                                <p className="text-white font-bold text-[30px] sm:text-[40px] leading-tight">
+                                <p className=" font-[500] text-[30px] sm:text-[40px] leading-tight">
                                     {stat.value}
                                 </p>
                                 <p
