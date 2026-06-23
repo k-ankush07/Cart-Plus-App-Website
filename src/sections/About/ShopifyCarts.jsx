@@ -25,6 +25,7 @@ const cards = [
 export default function ShopifyCarts() {
     return (
         <section className="relative">
+
             <Container className="py-[40px] max-[540px]:py-[25px] relative z-10">
                 {/* Heading */}
                 <div className="text-center">
@@ -73,6 +74,9 @@ export default function ShopifyCarts() {
                     ))}
                 </div>
             </Container>
+            <div className='absolute z-0 top-[-10%] right-0 hidden xl:block'>
+                <img src="https://cartplus.io/cartplus-img/Subtract (6).svg" alt="" loading="lazy" decoding="async" />
+            </div>
         </section>
     )
 }
