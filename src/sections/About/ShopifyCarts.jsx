@@ -3,19 +3,19 @@ import Container from '../../components/Container'
 
 const cards = [
     {
-        icon: "https://hubsyntax.com/cart-images/cartCon.svg",
+        icon: "https://cartplus.io/cartplus-img/Group 1707480053.svg",
         title: "Low Cart Conversions",
         description:
             "Even interested shoppers leave without purchasing when the cart experience creates friction.",
     },
     {
-        icon: "https://hubsyntax.com/cart-images/upsellOpp.svg",
+        icon: "https://cartplus.io/cartplus-img/Group 1707480054.svg",
         title: "No Upsell Opportunities",
         description:
             "Many stores leave revenue on the table by failing to encourage additional purchases.",
     },
     {
-        icon: "https://hubsyntax.com/cart-images/cluxUx.svg",
+        icon: "https://cartplus.io/cartplus-img/Group 1707480055.svg",
         title: "Slow & Clunky UX",
         description:
             "A slow, outdated cart experience disrupts the buying journey and drives customers away.",
@@ -41,19 +41,31 @@ export default function ShopifyCarts() {
                     {cards.map((card, index) => (
                         <div
                             key={index}
-                            className="border-2 border-white rounded-[30px] p-[20px] lg:p-[50px] max-[540px]:p-[30px] flex flex-col justify-center text-center"
+                            className="rounded-[30px] p-[20px] lg:p-[50px] max-[540px]:p-[30px] flex flex-col justify-center text-center relative"
                         >
-                            {/* Icon Circle */}
-                            <div className="bg-white max-[480px]:h-[100px] h-[120px] max-[480px]:w-[100px] w-[120px] rounded-full flex items-center justify-center p-[20px] mb-[30px] mx-auto">
+                            {/* Gradient border */}
+                            <div
+                                style={{
+                                    position: 'absolute',
+                                    inset: 0,
+                                    borderRadius: '30px',
+                                    padding: '2px',
+                                    background: 'linear-gradient(53.87deg, rgba(255,255,255,0.2) -14.16%, rgba(149,0,255,0.2) 105.89%)',
+                                    WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                                    WebkitMaskComposite: 'xor',
+                                    maskComposite: 'exclude',
+                                    pointerEvents: 'none',
+                                }}
+                            />
+
+                            <div className="bg-[linear-gradient(180deg,#000000_0%,#9500FF_174.83%)] max-[480px]:h-[100px] h-[120px] max-[480px]:w-[100px] w-[120px] rounded-full flex items-center justify-center p-[20px] mb-[30px] mx-auto">
                                 <img src={card.icon} alt={card.title} />
                             </div>
 
-                            {/* Title */}
                             <h3 className="text-[24px] font-[700] leading-[30px] mb-[15px]">
                                 {card.title}
                             </h3>
 
-                            {/* Description */}
                             <p className="text-[16px] leading-[23px]">
                                 {card.description}
                             </p>
