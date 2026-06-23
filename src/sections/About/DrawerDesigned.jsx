@@ -27,7 +27,7 @@ export default function DrawerDesigned() {
                         </h2>
 
                         {/* Benefit Bullets */}
-                        <p className="text-white font-semibold text-[15px] my-[20px]">Benefit Bullets</p>
+                        <p className=" font-semibold text-[15px] my-[20px]">Benefit Bullets</p>
                         <ul className="space-y-[10px] mb-[20px]">
                             {benefits.map((item) => (
                                 <li key={item} className="flex items-center gap-3">
@@ -35,12 +35,10 @@ export default function DrawerDesigned() {
                                     <span
                                         className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
                                     >
-                                        <img src="https://hubsyntax.com/cart-images/whiteCirlce.svg" alt="" />
+                                        <img src="https://cartplus.io/cartplus-img/Frame 2121452922 (1).svg" alt="" />
                                     </span>
                                     <span
-                                        className="text-[14px]"
-                                        style={{ color: 'rgba(255,255,255,0.85)' }}
-                                    >
+                                        className="text-[14px]">
                                         {item}
                                     </span>
                                 </li>
@@ -49,7 +47,7 @@ export default function DrawerDesigned() {
 
                         {/* CTA Button */}
                         <div>
-                            <Button icon="https://hubsyntax.com/cart-images/buttonIcon.png">App The Install</Button>
+                            <Button icon="https://cartplus.io/cartplus-img/Vector (6).png">App The Install</Button>
                         </div>
                     </div>
 
@@ -67,11 +65,9 @@ export default function DrawerDesigned() {
                     </div>
                 </div>
             </Container>
-
-            <div className='absolute right-30 bottom-[-25%] hidden lg:block'>
-                <img src="https://hubsyntax.com/cart-images/Mask group (31).svg" alt="" loading="lazy" decoding="async" />
+            <div className='absolute z-0 bottom-[-150%] left-0 hidden xl:block'>
+                <img src="https://cartplus.io/cartplus-img/Subtract (7).svg" alt="" loading="lazy" decoding="async" />
             </div>
-
         </section>
     )
 }
