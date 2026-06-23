@@ -35,13 +35,13 @@ export default function Pricing() {
       <SEO
         title="CartPlus Pricing – Affordable Shopify Cart Drawer"
         description="Choose the perfect CartPlus plan for your Shopify store and unlock advanced cart drawer features that help increase conversions and average order value."
-        url="https://hubsyntax.com/pricing"
+        url="https://cartplus.io/pricing"
       />
       <BannerSection
         heading='Build to Turn More Carts Into Sales'
         paragraph='We created Cart Plus after seeing thousands of Shopify stores lose sales because of outdated cart experiences. Our goal is simple help merchants increase conversions, drive more upsells, and boost average order value with a faster, smarter cart experience.'
         buttonText='Try Demo'
-        img='https://hubsyntax.com/cart-images/Group 1707480290.svg'
+        img='https://cartplus.io/cartplus-img/Group 1707480290 (1).svg'
       />
       <PricingSection showGradient={false} />
       <EverythingPlan />

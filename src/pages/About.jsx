@@ -14,7 +14,7 @@ export default function About() {
       <SEO
         title="About CartPlus – Shopify Cart Optimization Experts"
         description="CartPlus empowers Shopify merchants with high-converting cart drawer experiences designed to drive revenue, customer engagement, and long-term growth."
-        url="https://hubsyntax.com/about-us"
+        url="https://cartplus.io/about-us"
       />
       <BannerSection
         heading='Built for merchants who want to turn more carts into revenue.'

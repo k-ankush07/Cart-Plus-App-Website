@@ -12,7 +12,7 @@ export default function Contact() {
       <SEO
         title="CartPlus – Shopify App Support & Sales"
         description="Need help with CartPlus? Contact our team for product support, feature questions, partnership opportunities, and expert guidance."
-        url="https://hubsyntax.com/contact"
+        url="https://cartplus.io/contact"
       />
       <TopHeading
         heading="We'd love to hear from you"

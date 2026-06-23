@@ -33,7 +33,6 @@ export default function BannerSection({ heading, paragraph, buttonText, img }) {
                     </div>
                 </div>
             </Container>
-
         </section>
     )
 }

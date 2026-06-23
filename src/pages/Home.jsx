@@ -16,7 +16,7 @@ export default function Home() {
       <SEO
         title="CartPlus – Shopify Cart Drawer & Upsell App"
         description="Boost Shopify sales with CartPlus, the all-in-one cart drawer app featuring upsells, free shipping bars, rewards, and checkout optimization tools."
-        url="https://hubsyntax.com/"
+        url="https://cartplus.io/"
       />
       <BannerSection
         heading='Boost Your Revenue with Smart Checkout & Upsell Tools'

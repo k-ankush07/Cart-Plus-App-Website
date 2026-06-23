@@ -14,7 +14,8 @@ const features = [
 ]
 
 const CHECK = 'https://hubsyntax.com/cart-images/checkSign.svg'
-const CROSS = 'https://hubsyntax.com/cart-images/crossSign.svg'
+const CROSS = 'https://cartplus.io/cartplus-img/Frame 2121452953.svg'
+const checkBlack = 'https://cartplus.io/cartplus-img/Frame 2121452922.svg'
 
 function Icon({ value }) {
     return (
@@ -57,7 +58,7 @@ export default function EverythingPlan() {
                 </div>
 
                 {/* Table */}
-                <div className='overflow-x-auto rounded-[12px] border border-[#FFFFFF]'>
+                <div className='overflow-x-auto rounded-[12px] border border-[#4A4A4A]'>
                     <table className='w-full border-collapse'>
                         <thead>
                             <tr>
@@ -68,8 +69,8 @@ export default function EverythingPlan() {
 
                                 {/* Free */}
                                 <th className='py-[15px] lg:py-[28px] px-[20px] lg:px-[38px] text-center'>
-                                    <p className='text-white font-bold text-[20px] lg:text-[25px] mb-1'>Free</p>
-                                    <p className='text-white font-[600] text-[25px] lg:text-[38px] leading-none flex items-end justify-center'>
+                                    <p className=' font-bold text-[20px] lg:text-[25px] mb-1'>Free</p>
+                                    <p className=' font-[600] text-[25px] lg:text-[38px] leading-none flex items-end justify-center'>
                                         $0.00{' '}
                                         <span className='text-[14px] lg:text-[14px] lg:text-[20px] font-normal opacity-70'>/lifetime</span>
                                     </p>
@@ -86,8 +87,8 @@ export default function EverythingPlan() {
 
                                 {/* Scale */}
                                 <th className='py-[15px] lg:py-[28px] px-[20px] lg:px-[38px] text-center'>
-                                    <p className='text-white font-bold text-[20px] lg:text-[25px] mb-1'>Scale</p>
-                                    <p className='text-white font-[600] text-[25px] lg:text-[38px] leading-none flex items-end justify-center'>
+                                    <p className=' font-bold text-[20px] lg:text-[25px] mb-1'>Scale</p>
+                                    <p className=' font-[600] text-[25px] lg:text-[38px] leading-none flex items-end justify-center'>
                                         $9.99{' '}
                                         <span className='text-[14px] lg:text-[20px] font-normal opacity-70'>/lifetime</span>
                                     </p>
@@ -95,8 +96,8 @@ export default function EverythingPlan() {
 
                                 {/* Advanced */}
                                 <th className='py-[15px] lg:py-[28px] px-[20px] lg:px-[38px] text-center'>
-                                    <p className='text-white font-bold text-[20px] lg:text-[25px] mb-1'>Advanced</p>
-                                    <p className='text-white font-[600] text-[25px] lg:text-[38px] leading-none flex items-end justify-center'>
+                                    <p className=' font-bold text-[20px] lg:text-[25px] mb-1'>Advanced</p>
+                                    <p className=' font-[600] text-[25px] lg:text-[38px] leading-none flex items-end justify-center'>
                                         $14.99{' '}
                                         <span className='text-[14px] lg:text-[20px] font-normal opacity-70'>/lifetime</span>
                                     </p>
@@ -108,9 +109,9 @@ export default function EverythingPlan() {
                             {features.map((feature) => (
                                 <tr
                                     key={feature.name}
-                                    className='border-t border-white/[0.07]'
+                                    className='border-t border-[#4A4A4A]'
                                 >
-                                    <td className='px-[20px] lg:px-[38px] py-[15px] lg:py-[20px] text-white text-[15px] lg:text-[20px] font-medium'>
+                                    <td className='px-[20px] lg:px-[38px] py-[15px] lg:py-[20px]  text-[15px] lg:text-[20px] font-medium'>
                                         {feature.name}
                                     </td>
                                     <td className='px-[20px] lg:px-[38px] py-[15px] lg:py-[20px] text-center'>
@@ -132,7 +133,7 @@ export default function EverythingPlan() {
                 </div>
             </Container>
             <div className='absolute z-0 top-[-10%] right-0 hidden xl:block'>
-                <img src="https://hubsyntax.com/cart-images/Mask group (91).svg" alt="" loading="lazy" decoding="async" />
+                <img src="" alt="" loading="lazy" decoding="async" />
             </div>
         </section>
     )
