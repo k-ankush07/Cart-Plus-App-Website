@@ -33,7 +33,13 @@ export default function CartRevenue() {
                     {stats.map((stat) => (
                         <div
                             key={stat.label}
-                            className="flex items-center gap-4 px-5 py-5 rounded-[12px] bg-[#F9F1FF]"
+                            className="flex items-center gap-4 px-7 py-7 rounded-[12px] bg-[#F9F1FF] relative"
+                            style={{
+                                boxShadow: '0 0 0 1px transparent',
+                                background: 'linear-gradient(#F9F1FF, #F9F1FF) padding-box, linear-gradient(53.87deg, rgba(255, 255, 255, 0.2) -14.16%, rgba(149, 0, 255, 0.2) 105.89%) border-box',
+                                border: '1px solid transparent',
+                                borderRadius: '12px',
+                            }}
                         >
                             <div
                                 className="flex-shrink-0 w-[79px] h-[79px]  rounded-full flex items-center justify-center"
@@ -53,7 +59,7 @@ export default function CartRevenue() {
                                     {stat.value}
                                 </p>
                                 <p
-                                    className="text-[16px] sm:text-[18px] leading-snug mt-0.5"
+                                    className="text-[15px] sm:text-[16px] leading-snug mt-0.5"
                                 >
                                     {stat.label}
                                 </p>
