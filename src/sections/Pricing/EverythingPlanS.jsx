@@ -62,7 +62,7 @@ export default function EverythingPlan() {
                 </div>
 
                 {/* Grid */}
-                <div className='overflow-x-auto rounded-[12px] border border-[#4A4A4A]'>
+                <div className='overflow-x-auto rounded-[12px] border border-[#E8C8FF]'>
                     <div className='relative min-w-[700px]'>
                         {/* Starter column background — single full-height div */}
                         <div
@@ -72,19 +72,18 @@ export default function EverythingPlan() {
                                 width: 'calc(100% / 5)',
                                 background: 'linear-gradient(180deg, #000000 0%, #9500FF 174.83%)',
                                 boxShadow: 'inset 0 0 0 1px rgba(222,175,255,0.5)',
-                                opacity: '80%'
                             }}
                         />
 
                         {/* Header Row */}
                         <div className='grid grid-cols-5 relative'>
-                            <div className='py-[15px] lg:py-[28px] px-[20px] lg:px-[20px] text-left text-[20px] lg:text-[24px] tracking-widest font-semibold border-b border-[#4A4A4A] z-10'>
+                            <div className='py-[15px] lg:py-[28px] px-[20px] lg:px-[20px] text-left text-[20px] lg:text-[24px] tracking-widest font-semibold border-b border-[#E8C8FF] z-10'>
                                 From Feature
                             </div>
                             {plans.map((plan) => (
                                 <div
                                     key={plan.key}
-                                    className='py-[15px] lg:py-[28px] px-[20px] lg:px-[20px] text-center border-b border-[#4A4A4A] z-10'
+                                    className={`py-[15px] lg:py-[28px] px-[20px] lg:px-[20px] text-center z-10 ${plan.key !== 'starter' ? 'border-b border-[#E8C8FF]' : ''}`}
                                 >
                                     <p className={`font-bold text-[20px] lg:text-[25px] mb-1 ${plan.key === 'starter' ? 'text-white' : ''}`}>
                                         {plan.name}
@@ -101,15 +100,15 @@ export default function EverythingPlan() {
                         {features.map((feature, i) => (
                             <div
                                 key={feature.name}
-                                className={`grid grid-cols-5 relative ${i !== features.length - 1 ? 'border-b border-[#4A4A4A]' : ''}`}
+                                className='grid grid-cols-5 relative'
                             >
-                                <div className='px-[20px] lg:px-[20px] py-[15px] lg:py-[20px] text-[15px] lg:text-[20px] font-medium z-10'>
+                                <div className={`px-[20px] lg:px-[20px] py-[15px] lg:py-[20px] text-[15px] lg:text-[20px] font-medium z-10 ${i !== features.length - 1 ? 'border-b border-[#E8C8FF]' : ''}`}>
                                     {feature.name}
                                 </div>
                                 {plans.map((plan) => (
                                     <div
                                         key={plan.key}
-                                        className='px-[20px] lg:px-[20px] py-[15px] lg:py-[20px] flex items-center justify-center z-10'
+                                        className={`px-[20px] lg:px-[20px] py-[15px] lg:py-[20px] flex items-center justify-center z-10 ${i !== features.length - 1 && plan.key !== 'starter' ? 'border-b border-[#E8C8FF]' : ''}`}
                                     >
                                         <Cell
                                             value={feature[plan.key]}

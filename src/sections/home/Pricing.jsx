@@ -192,8 +192,8 @@ export default function Pricing({ showGradient }) {
                                 isActive
                                   ? 'https://cartplus.io/cartplus-img/Frame%202121452922%20%282%29.svg'
                                   : plan.id === 1
-                                    ? 'https://cartplus.io/cartplus-img/Vector (9).svg'
-                                    : 'https://cartplus.io/cartplus-img/Vector%20%287%29.svg'
+                                    ? 'https://cartplus.io/cartplus-img/Frame 2121453070.svg'
+                                    : 'https://cartplus.io/cartplus-img/Frame 2121453069.svg'
                               }
                               alt='check'
                               loading='lazy'
