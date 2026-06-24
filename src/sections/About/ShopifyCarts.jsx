@@ -43,6 +43,9 @@ export default function ShopifyCarts() {
                         <div
                             key={index}
                             className="rounded-[30px] p-[20px] lg:p-[50px] max-[540px]:p-[30px] flex flex-col justify-center text-center relative"
+                            style={{
+                                boxShadow: '0px 0px 80px 0px #9500FF14 inset'
+                            }}
                         >
                             {/* Gradient border */}
                             <div
@@ -51,7 +54,7 @@ export default function ShopifyCarts() {
                                     inset: 0,
                                     borderRadius: '30px',
                                     padding: '2px',
-                                    background: 'linear-gradient(53.87deg, rgba(255,255,255,0.2) -14.16%, rgba(149,0,255,0.2) 105.89%)',
+                                    background: 'linear-gradient(58.09deg, rgba(255, 255, 255, 0.2) -15.68%, rgba(149, 0, 255, 0.2) 126.6%)',
                                     WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
                                     WebkitMaskComposite: 'xor',
                                     maskComposite: 'exclude',

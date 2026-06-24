@@ -35,7 +35,7 @@ export default function DrawerDesigned() {
                                     <span
                                         className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center"
                                     >
-                                        <img src="https://cartplus.io/cartplus-img/Frame 2121452922 (1).svg" alt="" />
+                                        <img src="https://cartplus.io/cartplus-img/Frame 2121452926.svg" alt="" />
                                     </span>
                                     <span
                                         className="text-[14px]">

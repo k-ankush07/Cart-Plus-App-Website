@@ -50,7 +50,7 @@ export default function FAQ({ faqs: faqsProp = faqs }) {
               return (
                 <div
                   key={i}
-                  className="rounded-[15px] border border-[#D9D9D9] bg-white "
+                  className="rounded-[15px] border border-[#E8C8FF] bg-white "
                 >
                   <button
                     type="button"
