@@ -184,20 +184,24 @@ export default function Pricing({ showGradient }) {
                     <ul className='flex flex-col gap-[12px] my-[30px]'>
                       {plan.features.map((feature, index) => (
                         <li key={index} className='flex items-center gap-[10px] text-[12px]'>
-                          <img
-                            src={
-                              isActive
-                                ? 'https://cartplus.io/cartplus-img/Frame 2121452922 (2).svg'
-                                : plan.id === 1
-                                  ? 'https://cartplus.io/cartplus-img/Vector (4).svg'
-                                  : 'https://cartplus.io/cartplus-img/Vector (7).svg'
-                            }
-                            alt='check'
-                            loading='lazy'
-                            decoding='async'
-                            className='w-[15px] h-[15px]'
-                            onError={(e) => { e.target.style.display = 'none' }}
-                          />
+                          <div style={{
+                            width: '15px',
+                            height: '15px',}}>
+                            <img
+                              src={
+                                isActive
+                                  ? 'https://cartplus.io/cartplus-img/Frame%202121452922%20%282%29.svg'
+                                  : plan.id === 1
+                                    ? 'https://cartplus.io/cartplus-img/Vector (9).svg'
+                                    : 'https://cartplus.io/cartplus-img/Vector%20%287%29.svg'
+                              }
+                              alt='check'
+                              loading='lazy'
+                              decoding='async'
+                              onError={(e) => { e.target.style.display = 'none' }}
+                              className='w-full'
+                            />
+                          </div>
                           <span>{feature}</span>
                         </li>
                       ))}

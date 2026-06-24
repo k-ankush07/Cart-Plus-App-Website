@@ -23,9 +23,9 @@ const features = [
     { name: 'Custom HTML & CSS', free: false, starter: true, scale: true, advance: true },
 ]
 
-const CHECK = 'https://hubsyntax.com/cart-images/checkSign.svg'
-const CROSS = 'https://cartplus.io/cartplus-img/Frame 2121452953.svg'
-const checkBlack = 'https://cartplus.io/cartplus-img/Frame 2121452957.svg'
+const CHECK = 'https://cartplus.io/cartplus-img/Frame 2121452922 (3).svg'
+const CROSS = 'https://cartplus.io/cartplus-img/Frame 2121452953 (1).svg'
+const checkBlack = 'https://cartplus.io/cartplus-img/Frame 2121452922 (4).svg'
 
 function Cell({ value, isStarter, isScale, isAdvance }) {
     if (typeof value === 'string') {
@@ -43,6 +43,7 @@ function Cell({ value, isStarter, isScale, isAdvance }) {
 }
 
 export default function EverythingPlan() {
+
     return (
         <section className='relative'>
             <div className='absolute z-0 top-[-80%] right-0 hidden xl:block'>
