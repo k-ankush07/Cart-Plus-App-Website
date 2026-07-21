@@ -37,12 +37,12 @@ export default function Pricing() {
         description="Choose the perfect CartPlus plan for your Shopify store and unlock advanced cart drawer features that help increase conversions and average order value."
         url="https://cartplus.io/pricing"
       />
-      <BannerSection
+      {/* <BannerSection
         heading='Build to Turn More Carts Into Sales'
         paragraph='We created Cart Plus after seeing thousands of Shopify stores lose sales because of outdated cart experiences. Our goal is simple help merchants increase conversions, drive more upsells, and boost average order value with a faster, smarter cart experience.'
         buttonText='Try Demo'
         img='https://cartplus.io/cartplus-img/Frame 2121453067 (1).svg'
-      />
+      /> */}
       <PricingSection showGradient={false} />
       <EverythingPlan />
       <FAQ faqs={pricingFaqs} />
