@@ -37,15 +37,12 @@ export default function CartRevenue() {
                             style={{
                                 boxShadow: '0 0 0 1px transparent',
                                 background: 'linear-gradient(#F9F1FF, #F9F1FF) padding-box, linear-gradient(53.87deg, rgba(255, 255, 255, 0.2) -14.16%, rgba(149, 0, 255, 0.2) 105.89%) border-box',
-                                border: '1px solid transparent',
                                 borderRadius: '12px',
                             }}
                         >
                             <div
-                                className="flex-shrink-0 w-[79px] h-[79px]  rounded-full flex items-center justify-center"
-                                style={{
-                                    background: 'linear-gradient(180deg, #000000 0%, #9500FF 174.83%)',
-                                }}
+                                className="flex-shrink-0 w-[79px] h-[79px]  rounded-full flex items-center justify-center bg-[#6C4DFF]"
+                               
                             >
                                 <img
                                     src={stat.img}

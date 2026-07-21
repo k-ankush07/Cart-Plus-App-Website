@@ -43,9 +43,7 @@ export default function ShopifyCarts() {
                         <div
                             key={index}
                             className="rounded-[30px] p-[20px] lg:p-[50px] max-[540px]:p-[30px] flex flex-col justify-center text-center relative"
-                            style={{
-                                boxShadow: '0px 0px 80px 0px #9500FF14 inset'
-                            }}
+                           
                         >
                             {/* Gradient border */}
                             <div
@@ -62,7 +60,7 @@ export default function ShopifyCarts() {
                                 }}
                             />
 
-                            <div className="bg-[linear-gradient(180deg,#000000_0%,#9500FF_174.83%)] max-[480px]:h-[100px] h-[120px] max-[480px]:w-[100px] w-[120px] rounded-full flex items-center justify-center p-[20px] mb-[30px] mx-auto">
+                            <div className="bg-[#6C4DFF] max-[480px]:h-[100px] h-[120px] max-[480px]:w-[100px] w-[120px] rounded-full flex items-center justify-center p-[20px] mb-[30px] mx-auto">
                                 <img src={card.icon} alt={card.title} />
                             </div>
 

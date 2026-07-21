@@ -91,7 +91,7 @@ export default function HubCartFeatures() {
                     <div className='flex justify-end items-start w-[80%] max-[430px]:w-[100%] max-[540px]:w-[90%] mx-auto md:w-[100%]'>
                         <div>
                             <img
-                                src='https://cartplus.io/cartplus-img/cart-drawer-card (1).svg'
+                                src='https://cartplus.io/cartplus-img/cart-drawer-card (2).svg'
                                 alt='HubCart Features'
                                 loading='lazy'
                                 decoding='async'
@@ -99,7 +99,6 @@ export default function HubCartFeatures() {
                             />
                         </div>
                     </div>
-
                 </div>
             </Container>
             {/* <div className='absolute z-0 right-25 top-0 hidden xl:block'>

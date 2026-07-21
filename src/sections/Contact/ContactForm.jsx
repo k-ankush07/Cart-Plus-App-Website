@@ -4,9 +4,9 @@ import Button from '../../components/Button'
 
 // ── icon URLs ──────────────────────────────────────────────────────────────
 const ICONS = {
-  phone: 'https://cartplus.io/cartplus-img/Phone.svg',
-  mail: 'https://cartplus.io/cartplus-img/Group 1707480320.svg',
-  location: 'https://cartplus.io/cartplus-img/location_on.svg',
+  phone: 'https://cartplus.io/cartplus-img/Icon001.svg',
+  mail: 'https://cartplus.io/cartplus-img/Group 1707480408.svg',
+  location: 'https://cartplus.io/cartplus-img/Vector001.svg',
   linkedin: 'https://cartplus.io/cartplus-img/cib_linkedin-in.svg',
   facebook: 'https://cartplus.io/cartplus-img/Vector%20(6).svg',
   twitter: 'https://cartplus.io/cartplus-img/akar-icons_twitter-fill.svg',
@@ -37,7 +37,7 @@ export default function ContactForm() {
   const [form, setForm] = useState({
     firstName: '', lastName: '', email: '', phone: '', address: '',
   })
-  const [status, setStatus] = useState('idle') 
+  const [status, setStatus] = useState('idle')
   const [errorMsg, setErrorMsg] = useState('')
   const [fieldErrors, setFieldErrors] = useState({})
 
@@ -46,16 +46,16 @@ export default function ContactForm() {
     if (field === 'firstName' || field === 'lastName') {
       value = value.replace(/[^A-Za-z]/g, '')
     } else if (field === 'phone') {
-  value = value.replace(/[^\d+]/g, '');
+      value = value.replace(/[^\d+]/g, '');
 
-  if (!value.startsWith('+')) {
-    value = value.replace(/\+/g, '');
-  }
+      if (!value.startsWith('+')) {
+        value = value.replace(/\+/g, '');
+      }
 
-  if (value.startsWith('+')) {
-    value = '+' + value.slice(1).replace(/\+/g, '');
-  }
-}
+      if (value.startsWith('+')) {
+        value = '+' + value.slice(1).replace(/\+/g, '');
+      }
+    }
     setForm((prev) => ({ ...prev, [field]: value }))
     // clear that field's error as soon as the user edits it
     setFieldErrors((prev) => (prev[field] ? { ...prev, [field]: '' } : prev))
@@ -165,73 +165,73 @@ export default function ContactForm() {
   //   }
   // }
   const handleSend = async (e) => {
-  e.preventDefault()
+    e.preventDefault()
 
-  const errors = validate(form)
-  if (Object.keys(errors).length > 0) {
-    setFieldErrors(errors)
-    setStatus('error')
-    setErrorMsg('Please fix the highlighted fields.')
-    return
-  }
-  setFieldErrors({})
-
-  setStatus('submitting')
-  setErrorMsg('')
-
-  const submittedForm = { ...form }
-
-  // fire the actual request in the background
-  const requestPromise = fetch(API_ENDPOINT, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      // NOTE: shipped to the browser bundle — visible to anyone via dev tools.
-      // Not a real secret in production; see comment above API_ENDPOINT.
-      'X-API-Key': import.meta.env.VITE_API_SECRET_KEY,
-    },
-    body: JSON.stringify(submittedForm),
-  })
-
-  // a timer that always "resolves" the UI within 2 seconds
-  const uiTimeout = new Promise((resolve) => setTimeout(() => resolve('timeout'), 1000))
-
-  const winner = await Promise.race([requestPromise, uiTimeout])
-
-  if (winner === 'timeout') {
-    // 2 seconds passed — show success right away, let the real request
-    // keep running in the background and just log if it eventually fails
-    setStatus('success')
-    setForm({ firstName: '', lastName: '', email: '', phone: '', address: '' })
-    setFieldErrors({})
-
-    requestPromise
-      .then(async (res) => {
-        if (!res.ok) {
-          const data = await res.json().catch(() => ({}))
-          console.error('Background submit failed:', data.message || res.status)
-        }
-      })
-      .catch((err) => console.error('Background submit error:', err))
-
-    return
-  }
-
-  // request itself finished within 2 seconds — handle normally
-  try {
-    const res = winner
-    if (!res.ok) {
-      const data = await res.json().catch(() => ({}))
-      throw new Error(data.message || `Request failed with status ${res.status}`)
+    const errors = validate(form)
+    if (Object.keys(errors).length > 0) {
+      setFieldErrors(errors)
+      setStatus('error')
+      setErrorMsg('Please fix the highlighted fields.')
+      return
     }
-    setStatus('success')
-    setForm({ firstName: '', lastName: '', email: '', phone: '', address: '' })
     setFieldErrors({})
-  } catch (err) {
-    setStatus('error')
-    setErrorMsg(err.message || 'Something went wrong. Please try again.')
+
+    setStatus('submitting')
+    setErrorMsg('')
+
+    const submittedForm = { ...form }
+
+    // fire the actual request in the background
+    const requestPromise = fetch(API_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        // NOTE: shipped to the browser bundle — visible to anyone via dev tools.
+        // Not a real secret in production; see comment above API_ENDPOINT.
+        'X-API-Key': import.meta.env.VITE_API_SECRET_KEY,
+      },
+      body: JSON.stringify(submittedForm),
+    })
+
+    // a timer that always "resolves" the UI within 2 seconds
+    const uiTimeout = new Promise((resolve) => setTimeout(() => resolve('timeout'), 1000))
+
+    const winner = await Promise.race([requestPromise, uiTimeout])
+
+    if (winner === 'timeout') {
+      // 2 seconds passed — show success right away, let the real request
+      // keep running in the background and just log if it eventually fails
+      setStatus('success')
+      setForm({ firstName: '', lastName: '', email: '', phone: '', address: '' })
+      setFieldErrors({})
+
+      requestPromise
+        .then(async (res) => {
+          if (!res.ok) {
+            const data = await res.json().catch(() => ({}))
+            console.error('Background submit failed:', data.message || res.status)
+          }
+        })
+        .catch((err) => console.error('Background submit error:', err))
+
+      return
+    }
+
+    // request itself finished within 2 seconds — handle normally
+    try {
+      const res = winner
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        throw new Error(data.message || `Request failed with status ${res.status}`)
+      }
+      setStatus('success')
+      setForm({ firstName: '', lastName: '', email: '', phone: '', address: '' })
+      setFieldErrors({})
+    } catch (err) {
+      setStatus('error')
+      setErrorMsg(err.message || 'Something went wrong. Please try again.')
+    }
   }
-}
 
   return (
     <section className='relative'>
@@ -290,10 +290,8 @@ export default function ContactForm() {
                       key={key}
                       href={href}
                       aria-label={label}
-                      className="flex h-[30px] sm:h-[50px] w-[30px] sm:w-[50px] items-center justify-center rounded-full border "
-                      style={{
-                        background: 'linear-gradient(180deg, #000000 0%, #9500FF 174.83%)',
-                      }}
+                      className="flex h-[30px] sm:h-[50px] w-[30px] sm:w-[50px] items-center justify-center rounded-full bg-[#6C4DFF] "
+
                     >
                       <img src={ICONS[key]} alt={label} className="h-[15px] sm:h-[24px] w-[15px] sm:w-[24px]" />
                     </a>
@@ -310,12 +308,9 @@ export default function ContactForm() {
                 {['firstName', 'lastName'].map((field) => (
                   <div key={field}>
                     <div
-                      className="relative rounded-[10px]"
+                      className="relative rounded-[10px] border border-[#6C4DFF]"
                       style={{
-                        padding: '1px',
-                        background: fieldErrors[field]
-                          ? '#dc2626'
-                          : 'linear-gradient(53.87deg, rgba(255, 255, 255, 0.2) -14.16%, rgba(149, 0, 255, 0.2) 105.89%)',
+                        padding: '1px', boxShadow: '0px 0px 60px 0px #9500FF14 inset'
                       }}
                     >
                       <input
@@ -328,8 +323,7 @@ export default function ContactForm() {
                         minLength={2}
                         maxLength={30}
                         aria-invalid={Boolean(fieldErrors[field])}
-                        className="w-full rounded-[10px]  py-2 px-4 sm:py-3 text-[16px] text-[#B077DA] outline-none transition focus:bg-[#f0e4ff] placeholder-[#B077DA] disabled:opacity-60"
-                        style={{ background: '#F9F1FF' }}
+                        className="w-full rounded-[10px]  py-2 px-4 sm:py-3 text-[16px] text-[#6C4DFF] outline-none transition  placeholder-[#6C4DFF] disabled:opacity-60"
                       />
                     </div>
                     {fieldErrors[field] && (
@@ -344,12 +338,9 @@ export default function ContactForm() {
                 {/* Email */}
                 <div>
                   <div
-                    className="relative rounded-[10px]"
+                    className="relative rounded-[10px] border border-[#6C4DFF]"
                     style={{
-                      padding: '1px',
-                      background: fieldErrors.email
-                        ? '#dc2626'
-                        : 'linear-gradient(268.89deg, rgba(149,0,255,0.2) 0.28%, rgba(255,255,255,0.2) 99.72%)',
+                      padding: '1px', boxShadow: '0px 0px 60px 0px #9500FF14 inset'
                     }}
                   >
                     <input
@@ -360,8 +351,7 @@ export default function ContactForm() {
                       disabled={status === 'submitting'}
                       required
                       aria-invalid={Boolean(fieldErrors.email)}
-                      className="w-full rounded-[10px]  py-2 px-4 sm:py-3 text-[16px] text-[#B077DA] outline-none transition focus:bg-[#f0e4ff] placeholder-[#B077DA] disabled:opacity-60"
-                      style={{ background: '#F9F1FF' }}
+                      className="w-full rounded-[10px]  py-2 px-4 sm:py-3 text-[16px] text-[#6C4DFF] outline-none transition  placeholder-[#6C4DFF] disabled:opacity-60"
                     />
                   </div>
                   {fieldErrors.email && (
@@ -372,12 +362,9 @@ export default function ContactForm() {
                 {/* Phone */}
                 <div>
                   <div
-                    className="relative rounded-[10px]"
+                    className="relative rounded-[10px] border border-[#6C4DFF]"
                     style={{
-                      padding: '1px',
-                      background: fieldErrors.phone
-                        ? '#dc2626'
-                        : 'linear-gradient(268.89deg, rgba(149,0,255,0.2) 0.28%, rgba(255,255,255,0.2) 99.72%)',
+                      padding: '1px', boxShadow: '0px 0px 60px 0px #9500FF14 inset'
                     }}
                   >
                     <input
@@ -388,8 +375,7 @@ export default function ContactForm() {
                       disabled={status === 'submitting'}
                       maxLength={15}
                       aria-invalid={Boolean(fieldErrors.phone)}
-                      className="w-full rounded-[10px]  py-2 px-4 sm:py-3 text-[16px] text-[#B077DA] outline-none transition focus:bg-[#f0e4ff] placeholder-[#B077DA] disabled:opacity-60"
-                      style={{ background: '#F9F1FF' }}
+                      className="w-full rounded-[10px]  py-2 px-4 sm:py-3 text-[16px] text-[#6C4DFF] outline-none transition  placeholder-[#6C4DFF] disabled:opacity-60"
                     />
                   </div>
                   {fieldErrors.phone && (
@@ -399,11 +385,11 @@ export default function ContactForm() {
               </div>
 
               {/* Address */}
-              <div className="relative rounded-[10px]" style={{
+              <div className="relative rounded-[10px] border border-[#6C4DFF]" style={{
                 padding: '1px',
-                background: 'linear-gradient(268.89deg, rgba(149,0,255,0.2) 0.28%, rgba(255,255,255,0.2) 99.72%)',
                 lineHeight: 0,
                 display: 'block',
+                boxShadow: '0px 0px 60px 0px #9500FF14 inset'
               }}>
                 <textarea
                   rows={7}
@@ -411,8 +397,8 @@ export default function ContactForm() {
                   value={form.address}
                   onChange={set('address')}
                   disabled={status === 'submitting'}
-                  className="resize-none w-full rounded-[10px] text-[#B077DA] py-2 px-4 sm:py-3 text-[16px] outline-none transition focus:bg-[#f0e4ff] placeholder-[#B077DA] h-[120px] sm:h-[196px] disabled:opacity-60"
-                  style={{ background: '#F9F1FF', display: 'block', lineHeight: '1.5' }}
+                  className="resize-none w-full rounded-[10px] text-[#6C4DFF] py-2 px-4 sm:py-3 text-[16px] outline-none transition  placeholder-[#6C4DFF] h-[120px] sm:h-[196px] disabled:opacity-60"
+                  style={{ display: 'block', lineHeight: '1.5' }}
                 />
               </div>
 
@@ -437,7 +423,7 @@ export default function ContactForm() {
                 {status === 'submitting' ? (
                   <span className="flex items-center gap-2">
                     Sending...
-                     <svg
+                    <svg
                       className="animate-spin h-4 w-4"
                       viewBox="0 0 24 24"
                       fill="none"

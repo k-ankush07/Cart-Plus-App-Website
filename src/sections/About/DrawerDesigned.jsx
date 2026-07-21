@@ -16,13 +16,15 @@ export default function DrawerDesigned() {
         <section className="relative ">
 
             <Container className="py-[40px] max-[540px]:py-[25px] relative z-10">
-
-                <div className="flex flex-col md:flex-row items-center gap-[30px] lg:gap-[75px]">
+                <div>
+                    <img src="https://cartplus.io/cartplus-img/Group 1707480407 (2).svg" alt="" className='absolute w-full max-w-[61%] right-[165px] top-[107px]' />
+                </div>
+                <div className="flex flex-col md:flex-row items-center gap-[30px] lg:gap-[75px] relative">
 
                     {/* ── LEFT COLUMN ── */}
                     <div className="w-full flex flex-col justify-center">
                         {/* Heading */}
-                        <h2 className="font-semibold max-[540px]:text-[35px] text-[45px] lg:text-[55px] max-[540px]:leading-[45px] leading-[60px]">
+                        <h2 className="font-semibold max-w-[600px] max-[540px]:text-[35px] text-[45px] lg:text-[55px] max-[540px]:leading-[45px] leading-[60px]">
                             A Cart Drawer Designed to Increase Revenue
                         </h2>
 
@@ -47,7 +49,7 @@ export default function DrawerDesigned() {
 
                         {/* CTA Button */}
                         <div>
-                            <Button icon="https://cartplus.io/cartplus-img/Vector (6).png">App The Install</Button>
+                            <Button icon="https://cartplus.io/cartplus-img/Vector (6).png"> Install The App</Button>
                         </div>
                     </div>
 
@@ -56,7 +58,7 @@ export default function DrawerDesigned() {
 
                         {/* Group SVG (cart drawer mockup stack) */}
                         <img
-                            src="https://hubsyntax.com/cart-images/Group 1707480084.svg"
+                            src="https://cartplus.io/cartplus-img/shopify-cart-drawer.svg"
                             alt='HubCart'
                             loading='lazy'
                             decoding='async'

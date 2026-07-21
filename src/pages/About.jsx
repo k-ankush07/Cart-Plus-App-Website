@@ -20,11 +20,11 @@ export default function About() {
         heading='Built for merchants who want to turn more carts into revenue.'
         paragraph='We built Cart Plus to help Shopify merchants turn more carts into revenue with a smoother, more modern shopping experience. Our goal is simple: increase conversions, raise average order value, and make checkout feel effortless for every customer.'
         buttonText='Try Demo'
-        img='https://cartplus.io/cartplus-img/Frame 2121453065.svg'
+        img='https://cartplus.io/cartplus-img/Group 1707480398.svg'
       />
       <ShopifyCarts />
       <OurMission
-        img='https://hubsyntax.com/cart-images/Rectangle%20240648554.svg'
+        img='https://cartplus.io/cartplus-img/Group 1707480405.svg'
         heading='Our Mission'
         paragraph1='Our mission is to help merchants create faster, smarter, and more engaging cart experiences that drive higher conversions.'
         paragraph2='We believe ecommerce brands should have access to simple, effective tools that help increase revenue, improve customer satisfaction, and boost average order value—without the need for complex software or custom development.'
