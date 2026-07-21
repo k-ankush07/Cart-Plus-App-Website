@@ -56,7 +56,7 @@ export default function HubCartFeatures() {
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-[40px] lg:gap-[80px] items-center'>
 
                     {/* Left - Accordion */}
-                    <div>
+                    <div className='w-full'>
                         <h2 className='font-bold  max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[10px] mb-[20px]'>Cart Plus Features</h2>
                         <div className='flex flex-col'>
                             {features.map((feature) => (
@@ -88,14 +88,16 @@ export default function HubCartFeatures() {
                     </div>
 
                     {/* Right - Image */}
-                    <div className='flex justify-end items-start w-[80%] max-[430px]:w-[100%] max-[540px]:w-[90%] mx-auto md:w-[80%]'>
-                        <img
-                            src='https://cartplus.io/cartplus-img/cart-drawer-card (1).svg'
-                            alt='HubCart Features'
-                            loading='lazy'
-                            decoding='async'
-                            className='w-[100%] h-auto ml-auto'
-                        />
+                    <div className='flex justify-end items-start w-[80%] max-[430px]:w-[100%] max-[540px]:w-[90%] mx-auto md:w-[100%]'>
+                        <div>
+                            <img
+                                src='https://cartplus.io/cartplus-img/cart-drawer-card (1).svg'
+                                alt='HubCart Features'
+                                loading='lazy'
+                                decoding='async'
+                                className='w-[100%] h-auto ml-auto'
+                            />
+                        </div>
                     </div>
 
                 </div>
