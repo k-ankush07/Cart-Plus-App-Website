@@ -116,7 +116,7 @@ export default function Features() {
 
           <div className='w-full'>
             <img
-              src='https://cartplus.io/cartplus-img/Group%201707480373.svg'
+              src='https://cartplus.io/cartplus-img/Group 1707480373.webp'
               alt='Cart Plus features'
               loading='lazy'
               decoding='async'
