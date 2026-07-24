@@ -26,13 +26,13 @@ export default function ShopifyCarts() {
     return (
         <section className="relative">
 
-            <Container className="py-[40px] max-[540px]:py-[25px] relative z-10">
+            <Container className="py-[40px] max-[540px]:py-[20px] relative z-10">
                 {/* Heading */}
                 <div className="text-center">
-                    <h2 className="font-semibold max-[540px]:text-[35px] text-[45px] lg:text-[55px] max-[540px]:leading-[45px] leading-[60px]">
+                    <h2 className="font-semibold max-[540px]:text-[26px] text-[45px] lg:text-[55px] max-[540px]:leading-[34px] leading-[60px]">
                         Why Most Merchants Fail to Convert Cart into Sales
                     </h2>
-                    <p className="text-[18px] max-[540px]:text-[16px] py-[20px] max-[540px]:py-[16px]">
+                    <p className="text-[18px] max-[540px]:text-[14px] py-[20px] max-[540px]:py-[16px]">
                         Default cart experiences create friction, reduce upsells, and quietly cost your store revenue every single day.
                     </p>
                 </div>
@@ -60,7 +60,7 @@ export default function ShopifyCarts() {
                                 }}
                             />
 
-                            <div className="bg-[#6C4DFF] max-[480px]:h-[100px] h-[120px] max-[480px]:w-[100px] w-[120px] rounded-full flex items-center justify-center p-[20px] mb-[30px] mx-auto">
+                            <div className="bg-[#6C4DFF] max-[540px]:h-[60px] h-[120px] max-[540px]:w-[60px] w-[120px] rounded-full flex items-center justify-center max-[540px]:p-[10px] p-[20px] mb-[30px] mx-auto">
                                 <img src={card.icon} alt={card.title} />
                             </div>
 
@@ -68,7 +68,7 @@ export default function ShopifyCarts() {
                                 {card.title}
                             </h3>
 
-                            <p className="text-[16px] leading-[23px]">
+                            <p className="text-[16px] leading-[23px] ">
                                 {card.description}
                             </p>
                         </div>

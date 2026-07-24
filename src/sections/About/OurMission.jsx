@@ -4,11 +4,11 @@ import Container from '../../components/Container'
 export default function OurMission({ img, heading, paragraph1, paragraph2, paragraph3, gradientImg }) {
     return (
         <section className="relative" >
-            <Container className="py-[40px] max-[540px]:py-[25px] relative z-10">
-                <div className="flex flex-col xl:flex-row items-center gap-10 lg:gap-[75px]">
+            <Container className="py-[40px] max-[540px]:py-[20px] relative z-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 lg:gap-[50px]">
 
                     {/* Left: Image */}
-                    <div className="w-full  xl:w-1/2 flex-shrink-0">
+                    <div className="w-full">
                         <div>
                             <img
                                 src={img}
@@ -19,22 +19,28 @@ export default function OurMission({ img, heading, paragraph1, paragraph2, parag
                     </div>
 
                     {/* Right: Text Content */}
-                    <div className="w-full xl:w-1/2 ">
-                        <h2 className="font-semibold max-[540px]:text-[35px] text-[45px] lg:text-[55px] max-[540px]:leading-[45px] leading-[60px]">
+                    <div className="w-full text-center md:text-left">
+                        <h2 className="font-semibold max-[540px]:text-[26px] text-[45px] lg:text-[55px] max-[540px]:leading-[36px] leading-[60px]">
                             {heading}
                         </h2>
 
-                        <p className="text-[18px] max-[540px]:text-[16px] py-[15px] max-[540px]:py-[10px]">
-                            {paragraph1}
-                        </p>
+                        {paragraph1 && (
+                            <p className="text-[18px] max-[540px]:text-[14px] py-[15px] max-[540px]:py-[10px]">
+                                {paragraph1}
+                            </p>
+                        )}
 
-                        <p className="text-[18px] max-[540px]:text-[16px] py-[15px] max-[540px]:py-[10px]">
-                            {paragraph2}
-                        </p>
+                        {paragraph2 && (
+                            <p className="text-[18px] max-[540px]:text-[14px] py-[15px] max-[540px]:py-[10px]">
+                                {paragraph2}
+                            </p>
+                        )}
 
-                        <p className="text-[18px] max-[540px]:text-[16px] py-[15px] max-[540px]:py-[10px]">
-                            {paragraph3}
-                        </p>
+                        {paragraph3 && (
+                            <p className="text-[18px] max-[540px]:text-[14px] py-[15px] max-[540px]:py-[10px]">
+                                {paragraph3}
+                            </p>
+                        )}
                     </div>
                 </div>
             </Container>

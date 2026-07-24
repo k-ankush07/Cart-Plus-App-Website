@@ -28,7 +28,7 @@ export default function CartRevenue() {
     return (
         <section className="relative"
         >
-            <Container className="py-[40px] max-[540px]:py-[25px] relative z-10">
+            <Container className="py-[40px] max-[540px]:py-[20px] relative z-10">
                 <div className="grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-4 gap-[20px] sm:gap-[40px]">
                     {stats.map((stat) => (
                         <div

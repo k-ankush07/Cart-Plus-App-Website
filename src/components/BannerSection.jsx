@@ -11,7 +11,7 @@ export default function BannerSection({ heading, paragraph, buttonText, img }) {
             <Container className='py-[25px] max-[540px]:py-[20px] relative z-10'>
                 <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-[20px]'>
                     <div className='flex flex-col relative z-10 text-center md:text-left'>
-                        <h1 className='font-semibold text-[50px] lg:text-[65px] max-[540px]:text-[36px] max-[540px]:leading-[36px] leading-[55px] lg:leading-[70px] max-w-none md:max-w-[660px]'>
+                        <h1 className='font-semibold text-[50px] lg:text-[65px] max-[540px]:text-[26px] max-[540px]:leading-[36px] leading-[55px] lg:leading-[70px] max-w-none md:max-w-[660px]'>
                             {heading}
                         </h1>
                         <p className='text-[18px] max-[540px]:text-[14px] max-w-none md:max-w-[600px] py-[20px] max-[540px]:py-[16px]'>
