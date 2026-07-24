@@ -5,16 +5,16 @@ import Button from './Button'
 export default function BannerSection({ heading, paragraph, buttonText, img }) {
     return (
         <section className='relative'>
-            <div className='absolute hidden lg:block'>
+            <div className='absolute'>
                 <img src="https://cartplus.io/cartplus-img/Group 1707480310.svg" alt="" loading="lazy" decoding="async" />
             </div>
-            <Container className='py-[40px] max-[540px]:py-[25px] relative z-10'>
+            <Container className='py-[25px] max-[540px]:py-[20px] relative z-10'>
                 <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-[20px]'>
-                    <div className='flex flex-col relative z-10'>
-                        <h1 className='font-semibold text-[50px] lg:text-[65px] max-[540px]:text-[40px] max-[540px]:leading-[45px] leading-[55px] lg:leading-[70px] max-w-none md:max-w-[660px]'>
+                    <div className='flex flex-col relative z-10 text-center md:text-left'>
+                        <h1 className='font-semibold text-[50px] lg:text-[65px] max-[540px]:text-[36px] max-[540px]:leading-[36px] leading-[55px] lg:leading-[70px] max-w-none md:max-w-[660px]'>
                             {heading}
                         </h1>
-                        <p className='text-[18px] max-[540px]:text-[16px] max-w-none md:max-w-[600px] py-[20px] max-[540px]:py-[16px]'>
+                        <p className='text-[18px] max-[540px]:text-[14px] max-w-none md:max-w-[600px] py-[20px] max-[540px]:py-[16px]'>
                             {paragraph}
                         </p>
                         <div>

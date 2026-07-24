@@ -5,17 +5,17 @@ import Button from '../../components/Button'
 export default function CTA() {
   return (
     <section className='relative z-20'>
-      <Container className='py-[40px] max-[540px]:py-[25px]'>
+      <Container className='py-[40px] max-[540px]:py-[20px]'>
         <div
           style={{
             background:
               'linear-gradient(180deg, #000000 0%, #9500FF 174.83%)',
           }}
           className="relative overflow-hidden rounded-[15px] max-[390px]:px-4 px-8 max-[390px]:py-4 py-[30px] md:py-[80px] text-center text-white" >
-          <h2 className='font-bold font-bold max-[540px]:text-[35px] text-[45px] lg:text-[55px] leading-[45px] lg:leading-[60px] mb-[20px] text-center'>
+          <h2 className='font-bold font-bold max-[540px]:text-[26px] text-[45px] lg:text-[55px] leading-[45px] lg:leading-[60px] mb-[20px] text-center'>
             Turn More Carts Into More Revenue
           </h2>
-          <p className="mx-auto max-[540px]:text-[16px] text-[18px] max-[540px]:leading-[22px] leading-[28px] max-w-[890px]">
+          <p className="mx-auto max-[540px]:text-[14px] text-[18px] max-[540px]:leading-[22px] leading-[28px] max-w-[890px]">
             Boost conversions, increase average order value, and create seamless
             shopping experiences with smart cart upsells, rewards, and checkout
             optimization built for modern Shopify brands.

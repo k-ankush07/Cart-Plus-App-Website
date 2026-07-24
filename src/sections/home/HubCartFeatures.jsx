@@ -48,24 +48,24 @@ export default function HubCartFeatures() {
 
     return (
         <section className='relative'>
-            <div className='absolute z-0 top-0 right-0  hidden xl:block'>
+            <div className='absolute z-0 top-0 right-0'>
                 <img src="https://cartplus.io/cartplus-img/Group 1707480314.svg" alt="" loading="lazy" decoding="async" />
             </div>
 
-            <Container className='relative z-10 py-[40px] max-[540px]:py-[25px]'>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-[40px] lg:gap-[80px] items-center'>
+            <Container className='relative z-10 py-[20px] max-[540px]:py-[20px]'>
+                <div className='grid grid-cols-1 md:grid-cols-2 max-[540px]:gap-[20px] gap-[40px] lg:gap-[80px] items-center'>
 
                     {/* Left - Accordion */}
                     <div className='w-full'>
-                        <h2 className='font-bold  max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[10px] mb-[20px]'>Cart Plus Features</h2>
+                        <h2 className='font-bold  max-[540px]:text-[26px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[10px] mb-[20px] text-center md:text-left'>Cart Plus Features</h2>
                         <div className='flex flex-col'>
                             {features.map((feature) => (
-                                <div key={feature.id} className=' py-[15px]'>
+                                <div key={feature.id} className='max-[540px]:py-[8px] py-[15px]'>
                                     <button
                                         onClick={() => handleToggle(feature.id)}
                                         className='w-full flex items-center justify-between text-left cursor-pointer'
                                     >
-                                        <span className='text-[24px] leading-[30px] font-semibold'>{feature.title}</span>
+                                        <span className='max-[540px]:text-[16px] text-[24px] leading-[30px] font-semibold'>{feature.title}</span>
                                         <span className='flex items-center justify-center'>
                                             <img
                                                 src='https://cartplus.io/cartplus-img/Vector (2).svg'
@@ -78,7 +78,7 @@ export default function HubCartFeatures() {
                                         </span>
                                     </button>
                                     {openId === feature.id && (
-                                        <p className='text-[16px] leading-[26px]  pt-[10px]'>
+                                        <p className='max-[540px]:text-[14px] max-[540px]:leading-[18px]  text-[16px] leading-[26px]  pt-[10px]'>
                                             {feature.description}
                                         </p>
                                     )}

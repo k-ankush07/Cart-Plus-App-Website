@@ -40,21 +40,21 @@ export default function Features() {
   }
 
   return (
-    <section className='py-[40px] max-[540px]:py-[25px]  relative'>
-      <div className='absolute right-0 top-[-150px] z-0 hidden lg:block'>
+    <section className='py-[25px] max-[540px]:py-[0px] max-[540px]:pb-[20px]  relative'>
+      <div className='absolute right-0 top-[-150px] z-0'>
         <img src="https://cartplus.io/cartplus-img/Subtract (1).svg" alt="cart plus" className='w-full' />
       </div>
       <Container className='relative'>
         <div className='text-center'>
-          <h2 className='font-semibold max-[540px]:text-[35px] text-[45px] lg:text-[55px] max-[540px]:leading-[45px] leading-[60px]'>
+          <h2 className='font-semibold max-[540px]:text-[28px] text-[45px] lg:text-[55px] max-[540px]:leading-[45px] leading-[60px]'>
             Why Merchants Choose Cart Plus
           </h2>
-          <p className='text-[18px] max-[540px]:text-[16px] py-[20px] max-[540px]:py-[16px]'>
+          <p className='text-[18px] max-[540px]:text-[14px] py-[20px] max-[540px]:py-[16px]'>
             Cart Plus works behind the scenes to increase your revenue automatically — from cart to checkout.
           </p>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-[25px]'>
+        <div className='grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-[25px] pt-[20px] max-[540px]:pt-[0]'>
           <div className='pt-[0px] md:pt-[30px] lg:pt-[75px]'>
             {features.map((feature, index) => {
               const isActive = activeIndex === index

@@ -32,10 +32,10 @@ export default function FAQ({ faqs: faqsProp = faqs }) {
 
   return (
     <section className='relative z-10'>
-      <Container className="py-[40px] max-[540px]:py-[25px]">
+      <Container className="py-[40px] max-[540px]:py-[20px]">
        <div>
           <div className="text-center">
-            <h2 className="font-bold max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px]">
+            <h2 className="font-bold max-[540px]:text-[26px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px]">
               Frequently asked questions
             </h2>
           </div>
@@ -51,9 +51,9 @@ export default function FAQ({ faqs: faqsProp = faqs }) {
                   <button
                     type="button"
                     onClick={() => setOpenIndex(isOpen ? -1 : i)}
-                    className="flex w-full items-center justify-between max-[430px]:px-3 px-6 py-4 text-left cursor-pointer"
+                    className="flex w-full items-center justify-between  px-6 py-4 text-left cursor-pointer"
                   >
-                    <span className="max-[430px]:text-[18px] text-[20px] font-[600] text-[#000000] max-[430px]:leading-[25px] leading-[32px]">{faq.q}</span>
+                    <span className="max-[540px]:text-[16px] text-[20px] font-[600] text-[#000000] max-[540px]:leading-[18px] leading-[32px]">{faq.q}</span>
                     <img
                       src={isOpen ? minusImg : plusImg}
                       alt={isOpen ? 'collapse' : 'expand'}
@@ -63,7 +63,7 @@ export default function FAQ({ faqs: faqsProp = faqs }) {
                     />
                   </button>
                   {isOpen && (
-                    <div className="max-[430px]:px-3 px-6 pb-4 max-[430px]:text-[16px] text-[18px] max-[540px]:text-[16px] max-[540px]:leading-[22px] leading-[28px] text-[#000000]">
+                    <div className="px-6 pb-4 max-[540px]:text-[14px] text-[18px] max-[540px]:text-[16px] max-[540px]:leading-[22px] leading-[28px] text-[#000000]">
                       {faq.a}
                     </div>
                   )}

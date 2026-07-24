@@ -20,20 +20,22 @@ export default function Footer() {
       <Container className='relative pt-[40px] max-[540px]:pt-[25px]'>
         <div className="flex flex-col items-center text-center">
           <Link to="/" onClick={scrollToTop} className="flex items-center">
-            <img
-              src="https://cartplus.io/cartplus-img/Layer_1 (1).png"
-              alt="HubCart"
-              loading="lazy"
-              decoding="async"
-              className="h-[30px] lg:h-[41px] w-auto "
-            />
+            <div className='max-w-[178px]'>
+              <img
+                src="https://cartplus.io/cartplus-img/Layer_1 (1).png"
+                alt="HubCart"
+                loading="lazy"
+                decoding="async"
+                className="w-auto"
+              />
+            </div>
           </Link>
 
-          <p className="mt-[20px] text-[16px] leading-[26px]">
+          <p className="mt-[20px] text-[14px] leading-[26px]">
             Increase your revenue with smarter checkout, upsells, and conversion tools built for modern Shopify brands.
           </p>
 
-          <nav className="mt-[20px] flex flex-wrap items-center justify-center gap-x-10 gap-y-3 max-[540px]:text-[16px] text-[18px]">
+          <nav className="mt-[20px] flex flex-wrap items-center justify-center gap-x-10 gap-y-3 max-[540px]:text-[14px] text-[18px]">
             <Link to="/" onClick={scrollToTop} className="text-[#000000] transition-colors font-[600]">Home</Link>
             <Link to="/about" onClick={scrollToTop} className="text-[#000000] transition-colors font-[600]">About Us</Link>
             {/* <Link to="/casestudie" onClick={scrollToTop} className="text-[#000000] transition-colors font-[600]">Case Studies</Link> */}

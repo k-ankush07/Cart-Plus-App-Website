@@ -104,13 +104,13 @@ export default function Pricing({ showGradient }) {
 
   return (
     <section className='relative'>
-      <Container className='py-[40px] max-[540px]:py-[25px] relative z-10'>
+      <Container className='py-[40px] max-[540px]:py-[20px] relative z-10'>
         <div>
           <div className='text-center max-[540px]:mb-[20px] mb-[40px]'>
-            <h2 className='font-bold max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[15px] mb-[20px]'>
+            <h2 className='font-bold max-[540px]:text-[26px] max-[540px]:leading-[36px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[15px] mb-[20px]'>
               Simple, Transparent Pricing
             </h2>
-            <p className='max-[540px]:text-[16px] text-[18px] max-[540px]:leading-[22px] leading-[28px] mx-auto max-w-[950px]'>
+            <p className='max-[540px]:text-[14px] text-[18px] max-[540px]:leading-[22px] leading-[28px] mx-auto max-w-[950px]'>
               Choose the plan that best fits your store and grow with confidence.
             </p>
           </div>
@@ -161,19 +161,19 @@ export default function Pricing({ showGradient }) {
                   {/* Top Content */}
                   <div>
                     <h3 className='text-[20px] font-bold'>{plan.name}</h3>
-                    <p className={`text-[12px] mb-[20px] transition-colors duration-300 ${isActive ? 'text-white/70' : 'text-[#000000]'}`}>
+                    <p className={`text-[14px] mb-[20px] transition-colors duration-300 ${isActive ? 'text-white/70' : 'text-[#000000]'}`}>
                       {plan.subtitle}
                     </p>
 
                     <hr className={`max-[540px]:mb-[10px] mb-[16px] border-t transition-colors duration-300 ${isActive ? 'border-white/20' : 'border-[#F4F4F4]'}`} />
 
                     {plan.orders && (
-                      <p className={`text-[12px] font-semibold mb-[6px] transition-colors duration-300 ${isActive ? 'text-white/60' : 'text-gray-400'}`}>
+                      <p className={`text-[14px] font-semibold mb-[6px] transition-colors duration-300 ${isActive ? 'text-white/60' : 'text-gray-400'}`}>
                         {plan.orders}
                       </p>
                     )}
                     <div className='flex items-end gap-[4px] mb-[6px]'>
-                      <span className='max-[540px]:text-[25px] text-[36px] font-bold max-[540px]:leading-[35px] leading-[44px]'>{plan.price}</span>
+                      <span className='text-[36px] font-bold max-[540px]:leading-[35px] leading-[44px]'>{plan.price}</span>
                       {plan.period && (
                         <span className={`text-[14px] mb-[6px] transition-colors duration-300 ${isActive ? 'text-white/70' : 'text-gray-500'}`}>
                           {plan.period}
@@ -181,7 +181,7 @@ export default function Pricing({ showGradient }) {
                       )}
                     </div>
                     <hr className={`max-[540px]:mb-[10px] mb-[16px] border-t transition-colors duration-300 ${isActive ? 'border-white/20' : 'border-[#F4F4F4]'}`} />
-                    <ul className='flex flex-col gap-[12px] my-[30px]'>
+                    <ul className='flex flex-col gap-[12px] my-[40px]'>
                       {plan.features.map((feature, index) => (
                         <li key={index} className='flex items-center gap-[10px] text-[12px]'>
                           <div style={{
@@ -235,7 +235,7 @@ export default function Pricing({ showGradient }) {
       </Container>
       {showGradient && (
         <>
-          <div className='absolute z-0 top-50 left-0 hidden xl:block'>
+          <div className='absolute z-0 top-50 left-0'>
             <img src="https://cartplus.io/cartplus-img/Subtract (5).svg" alt="" loading="lazy" decoding="async" />
           </div>
         </>
