@@ -236,28 +236,28 @@ export default function ContactForm() {
   return (
     <section className='relative'>
 
-      <Container className="relative z-10 py-[40px] max-[540px]:py-[25px]">
+      <Container className="relative z-10 py-[40px] max-[540px]:py-[20px]">
         {/* card */}
         <div>
           <div className="grid gap-6 lg:gap-12 lg:grid-cols-2">
             {/* ── LEFT: info ───────────────────────────────────── */}
             <div className="flex flex-col gap-[30px] lg:gap-[50px]">
               <div>
-                <h2 className='font-bold max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px]'>
+                <h2 className='font-bold max-[540px]:text-[28px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px]'>
                   Let's Discuss Your Goals
                 </h2>
 
                 <div className='mt-3 flex flex-col gap-4'>
                   <div>
-                    <h3 className='font-semibold text-[18px] lg:text-[20px]'>Improve Your Cart Experience</h3>
-                    <p className='text-[15px] lg:text-[16px] mt-1'>
+                    <h3 className='font-semibold text-[20px] lg:text-[20px]'>Improve Your Cart Experience</h3>
+                    <p className='text-[16px] mt-1'>
                       Tell us about the challenges you're facing, and we'll help you create a smoother shopping journey for your customers.
                     </p>
                   </div>
 
                   <div>
                     <h3 className='font-semibold text-[18px] lg:text-[20px]'>Boost Conversions & Revenue</h3>
-                    <p className='text-[15px] lg:text-[16px] mt-1'>
+                    <p className='text-[16px] mt-1'>
                       Discover how Cart Plus can reduce cart abandonment, increase average order value, and help turn more visitors into customers.
                     </p>
                   </div>
@@ -268,12 +268,12 @@ export default function ContactForm() {
               <ul className="flex flex-col gap-[10px] sm:gap-[30px]">
                 {CONTACT_INFO.map(({ icon, label, value }) => (
                   <li key={label} className="flex items-start gap-[20px]">
-                    <span className="mt-0.5 flex  h-[30px] sm:h-[45px]  w-[30px] sm:w-[45px] shrink-0 items-center justify-center">
-                      <img src={ICONS[icon]} alt={label} className="h-[15px] sm:h-[25px] w-[15px] sm:w-[25px]" />
+                    <span className="mt-0.5 flex  h-[30px]  w-[30px]  shrink-0 items-center justify-center">
+                      <img src={ICONS[icon]} alt={label} className="w-full" />
                     </span>
                     <div>
-                      <p className="text-[15px] sm:text-[18px] font-semibold ">{label}</p>
-                      <p className="mt-0.5 text-[15px] sm:text-[18px]">{value}</p>
+                      <p className="text-[16px] sm:text-[18px] font-semibold ">{label}</p>
+                      <p className="mt-0.5 text-[14px] sm:text-[18px]">{value}</p>
                     </div>
                   </li>
                 ))}
@@ -281,19 +281,19 @@ export default function ContactForm() {
 
               {/* social */}
               <div className='mt-[-5px] sm:mt-[-20px]'>
-                {/* <p className="mb-[10px] sm:mb-[20px] text-[20px] font-bold uppercase tracking-widest">
+                <p className="mb-[10px] sm:mb-[20px] text-[20px] font-bold uppercase tracking-widest">
                   Follow Us
-                </p> */}
+                </p>
                 <div className="flex gap-3 mt-[10px]">
                   {SOCIAL.map(({ key, href, label }) => (
                     <a
                       key={key}
                       href={href}
                       aria-label={label}
-                      className="flex h-[30px] sm:h-[50px] w-[30px] sm:w-[50px] items-center justify-center rounded-full bg-[#6C4DFF] "
+                      className="flex h-[38px] sm:h-[50px] w-[38px] sm:w-[50px] items-center justify-center rounded-full bg-[#6C4DFF] "
 
                     >
-                      <img src={ICONS[key]} alt={label} className="h-[15px] sm:h-[24px] w-[15px] sm:w-[24px]" />
+                      <img src={ICONS[key]} alt={label} className="h-[20px] sm:h-[24px] w-[20px] sm:w-[24px]" />
                     </a>
                   ))}
                 </div>
@@ -304,7 +304,7 @@ export default function ContactForm() {
             <form onSubmit={handleSend} className="flex flex-col gap-4">
 
               {/* First / Last name row */}
-              <div className="grid max-[430px]:grid-cols-1 grid-cols-2 gap-4">
+               <div className="grid max-[540px]:grid-cols-1 grid-cols-2 gap-4">
                 {['firstName', 'lastName'].map((field) => (
                   <div key={field}>
                     <div
@@ -334,7 +334,7 @@ export default function ContactForm() {
               </div>
 
               {/* Email / Phone row */}
-              <div className="grid max-[430px]:grid-cols-1 grid-cols-2 gap-4">
+              <div className="grid max-[540px]:grid-cols-1 grid-cols-2 gap-4">
                 {/* Email */}
                 <div>
                   <div

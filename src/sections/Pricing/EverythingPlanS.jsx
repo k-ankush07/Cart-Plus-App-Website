@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import Container from '../../components/Container'
 
 const plans = [
@@ -40,83 +40,143 @@ function Cell({ value, isStarter, isScale, isAdvance }) {
 }
 
 export default function EverythingPlan() {
+    const scrollRef = useRef(null)
+    const [thumb, setThumb] = useState({ width: 100, left: 0 })
+
+    const updateThumb = () => {
+        const el = scrollRef.current
+        if (!el) return
+        const { scrollLeft, scrollWidth, clientWidth } = el
+
+        if (scrollWidth <= clientWidth) {
+            setThumb({ width: 100, left: 0 })
+            return
+        }
+
+        const maxScroll = scrollWidth - clientWidth
+        const scrolledPercent = (scrollLeft / maxScroll) * 100
+
+        const minWidth = (clientWidth / scrollWidth) * 100
+        const fillWidth = minWidth + (scrolledPercent / 100) * (100 - minWidth)
+
+        setThumb({ width: fillWidth, left: 0 })
+    }
+
+    useEffect(() => {
+        updateThumb()
+
+        // Recalculate shortly after mount, once images/icons have painted
+        const timeout = setTimeout(updateThumb, 300)
+
+        // Recalculate whenever the scroll container's size changes
+        const resizeObserver = new ResizeObserver(updateThumb)
+        if (scrollRef.current) resizeObserver.observe(scrollRef.current)
+
+        window.addEventListener('resize', updateThumb)
+        window.addEventListener('load', updateThumb)
+
+        return () => {
+            clearTimeout(timeout)
+            resizeObserver.disconnect()
+            window.removeEventListener('resize', updateThumb)
+            window.removeEventListener('load', updateThumb)
+        }
+    }, [])
 
     return (
         <section className='relative'>
             <div className='absolute z-0 top-[-80%] right-0 hidden xl:block'>
                 <img src="https://cartplus.io/cartplus-img/Subtract (6).svg" alt="" loading="lazy" decoding="async" />
             </div>
-            <Container className='py-[40px] max-[540px]:py-[25px] relative z-10'>
+            <Container className='py-[40px] max-[540px]:py-[20px] relative z-10'>
 
                 {/* Heading */}
                 <div className='text-center max-[540px]:mb-[10px] mb-[20px]'>
-                    <h2 className='font-bold max-[540px]:text-[35px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] mb-[10px]'>
+                    <h2 className='font-bold max-[540px]:text-[26px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] mb-[10px]'>
                         See Everything Included In Each Plan
                     </h2>
-                    <p className='max-[540px]:text-[16px] text-[18px] max-[540px]:leading-[22px] leading-[28px] mx-auto max-w-[950px]'>
+                    <p className='max-[540px]:text-[14px] text-[18px] max-[540px]:leading-[22px] leading-[28px] mx-auto max-w-[950px]'>
                         Compare features across all plans and choose the perfect cart drawer solution for your Shopify store.
                     </p>
                 </div>
 
-                {/* Grid */}
-                <div className='overflow-x-auto rounded-[12px] border border-[#E8C8FF]'>
-                    <div className='relative min-w-[700px]'>
-                        {/* Starter column background — single full-height div */}
-                        <div
-                            className='absolute top-0 bottom-0 z-0'
-                            style={{
-                                left: 'calc(100% / 5 * 2)',
-                                width: 'calc(100% / 5)',
-                                background: 'linear-gradient(180deg, #000000 0%, #9500FF 174.83%)',
-                                boxShadow: 'inset 0 0 0 1px rgba(222,175,255,0.5)',
-                            }}
-                        />
-
-                        {/* Header Row */}
-                        <div className='grid grid-cols-5 relative'>
-                            <div className='py-[15px] lg:py-[28px] px-[20px] lg:px-[20px] text-left text-[20px] lg:text-[24px] tracking-widest font-semibold border-b border-[#E8C8FF] z-10'>
-                                From Feature
-                            </div>
-                            {plans.map((plan) => (
-                                <div
-                                    key={plan.key}
-                                    className={`py-[15px] lg:py-[28px] px-[20px] lg:px-[20px] text-center z-10 ${plan.key !== 'starter' ? 'border-b border-[#E8C8FF]' : ''}`}
-                                >
-                                    <p className={`font-bold text-[20px] lg:text-[25px] mb-1 ${plan.key === 'starter' ? 'text-white' : ''}`}>
-                                        {plan.name}
-                                    </p>
-                                    <p className={`font-[600] text-[25px] lg:text-[20px] leading-none flex items-end justify-center ${plan.key === 'starter' ? 'text-white' : ''}`}>
-                                        {plan.price}{' '}
-                                        <span className='text-[14px] lg:text-[20px] font-normal opacity-70'>{plan.period}</span>
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* Feature Rows */}
-                        {features.map((feature, i) => (
+                {/* Table + scrollbar wrapper — same width so the progress bar matches exactly */}
+                <div className='w-full'>
+                    <div
+                        ref={scrollRef}
+                        onScroll={updateThumb}
+                        className='overflow-x-auto rounded-[12px] border border-[#E8C8FF] hide-native-scrollbar'
+                    >
+                        <div className='relative min-w-[1000px]'>
+                            {/* Starter column background — single full-height div */}
                             <div
-                                key={feature.name}
-                                className='grid grid-cols-5 relative'
-                            >
-                                <div className={`px-[20px] lg:px-[20px] py-[15px] lg:py-[20px] text-[15px] lg:text-[20px] font-medium z-10 ${i !== features.length - 1 ? 'border-b border-[#E8C8FF]' : ''}`}>
-                                    {feature.name}
+                                className='absolute top-0 bottom-0 z-0'
+                                style={{
+                                    left: 'calc(100% / 5 * 2)',
+                                    width: 'calc(100% / 5)',
+                                    background: 'linear-gradient(180deg, #000000 0%, #9500FF 174.83%)',
+                                    boxShadow: 'inset 0 0 0 1px rgba(222,175,255,0.5)',
+                                }}
+                            />
+
+                            {/* Header Row */}
+                            <div className='grid grid-cols-5 relative'>
+                                <div className='py-[15px] lg:py-[28px] px-[20px] lg:px-[20px] text-left max-[540px]:text-[16px] text-[20px] lg:text-[24px] tracking-widest font-semibold border-b border-[#E8C8FF] z-10'>
+                                    From Feature
                                 </div>
                                 {plans.map((plan) => (
                                     <div
                                         key={plan.key}
-                                        className={`px-[20px] lg:px-[20px] py-[15px] lg:py-[20px] flex items-center justify-center z-10 ${i !== features.length - 1 && plan.key !== 'starter' ? 'border-b border-[#E8C8FF]' : ''}`}
+                                        className={`py-[15px] lg:py-[28px] px-[20px] lg:px-[20px] text-center z-10 ${plan.key !== 'starter' ? 'border-b border-[#E8C8FF]' : ''}`}
                                     >
-                                        <Cell
-                                            value={feature[plan.key]}
-                                            isStarter={plan.key === 'starter'}
-                                            isScale={plan.key === 'scale'}
-                                            isAdvance={plan.key === 'advance'}
-                                        />
+                                        <p className={`font-bold text-[20px] lg:text-[25px] mb-1 ${plan.key === 'starter' ? 'text-white' : ''}`}>
+                                            {plan.name}
+                                        </p>
+                                        <p className={`font-[600] text-[20px] leading-none flex items-end justify-center ${plan.key === 'starter' ? 'text-white' : ''}`}>
+                                            {plan.price}{' '}
+                                            <span className='text-[14px] lg:text-[20px] font-normal opacity-70'>{plan.period}</span>
+                                        </p>
                                     </div>
                                 ))}
                             </div>
-                        ))}
+
+                            {/* Feature Rows */}
+                            {features.map((feature, i) => (
+                                <div
+                                    key={feature.name}
+                                    className='grid grid-cols-5 relative'
+                                >
+                                    <div className={`px-[20px] lg:px-[20px] py-[15px] lg:py-[20px] text-[15px] lg:text-[20px] font-medium z-10 ${i !== features.length - 1 ? 'border-b border-[#E8C8FF]' : ''}`}>
+                                        {feature.name}
+                                    </div>
+                                    {plans.map((plan) => (
+                                        <div
+                                            key={plan.key}
+                                            className={`px-[20px] lg:px-[20px] py-[15px] lg:py-[20px] flex items-center justify-center z-10 ${i !== features.length - 1 && plan.key !== 'starter' ? 'border-b border-[#E8C8FF]' : ''}`}
+                                        >
+                                            <Cell
+                                                value={feature[plan.key]}
+                                                isStarter={plan.key === 'starter'}
+                                                isScale={plan.key === 'scale'}
+                                                isAdvance={plan.key === 'advance'}
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Custom scroll progress bar — visible only from md (768px) and up */}
+                    <div className='block md:hidden relative w-full h-[4px] bg-[#000000] rounded-full mt-[20px]'>
+                        <div
+                            className='absolute top-0 h-full rounded-full transition-all duration-150'
+                            style={{
+                                width: `${thumb.width}%`,
+                                left: `${thumb.left}%`,
+                                background: '#6C4DFF',
+                            }}
+                        />
                     </div>
                 </div>
 

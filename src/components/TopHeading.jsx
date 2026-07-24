@@ -4,12 +4,12 @@ import Container from './Container'
 export default function TopHeading({ heading, paragraph, showGradient }) {
     return (
         <section >
-            <Container className='relative z-10 py-[40px] max-[540px]:py-[25px]'>
+            <Container className='relative z-10 py-[40px] max-[540px]:py-[20px]'>
                 <div className='text-center'>
-                    <h1 className='font-bold max-[540px]:text-[35px] text-[45px] lg:text-[65px] max-w-[1000px] mx-auto leading-[50px] lg:leading-[70px] mb-[20px]'>
+                    <h1 className='font-bold max-[540px]:text-[28px] text-[45px] lg:text-[65px] max-w-[1000px] mx-auto leading-[40px] lg:leading-[70px] mb-[20px]'>
                         {heading}
                     </h1>
-                    <p className='max-[540px]:text-[16px] text-[18px] max-[540px]:leading-[22px] leading-[28px] mx-auto max-w-[1000px]'>
+                    <p className='max-[540px]:text-[14px] text-[18px] max-[540px]:leading-[22px] leading-[28px] mx-auto max-w-[1000px]'>
                         {paragraph}
                     </p>
                 </div>

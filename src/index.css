@@ -26,3 +26,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
 }
+
+.hide-native-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+.hide-native-scrollbar::-webkit-scrollbar {
+  display: none;
+}
