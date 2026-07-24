@@ -11,18 +11,18 @@ export default function TermsConditions() {
                 <div>
 
                     {/* Page Heading */}
-                    <h1 className="font-bold text-[50px] text-center max-[540px]:text-[34px] leading-[1.2] mb-[40px]">
+                    <h1 className="font-bold text-[50px] text-center max-[540px]:text-[28px] leading-[1.2] mb-[20px]">
                         Terms and Conditions for Cart Plus
                     </h1>
-                    <p className="text-[16px] leading-[26px] text-gray-600 mb-[20px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] text-gray-600 mb-[20px]">
                         Last Updated: 15/06/2026
                     </p>
 
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         Welcome to Cart Plus. These Terms and Conditions ("Terms") govern your access to and use of the Cart Plus
                          Shopify app (the "Service")
                     </p>
-                    <p className="text-[16px] leading-[26px] mb-[20px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[20px]">
                         By installing, accessing, or using Cart Plus, you agree to be bound by these
                         Terms. If you do not agree to these Terms, you must not install or use the App.
                     </p>
@@ -31,12 +31,12 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Description of Service
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         Cart Plus is a Shopify application that enables merchants to enhance their
                         online stores through customizable cart drawer functionality, cart upsells,
                         cart recommendations, cart announcements, and related e-commerce features.
                     </p>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         We reserve the right to modify, improve, suspend, or discontinue any part of
                         the Service at any time.
                     </p>
@@ -45,8 +45,8 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Eligibility
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">To use Cart Plus, you must:</p>
-                    <ul className="list-disc pl-[22px] text-[16px] leading-[26px] mb-[16px] space-y-[8px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">To use Cart Plus, you must:</p>
+                    <ul className="list-disc pl-[22px] max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
                         <li>Have a valid Shopify store.</li>
                         <li>Be authorized to install applications on the Shopify store.</li>
                         <li>Comply with all applicable laws and Shopify's policies and terms.</li>
@@ -56,18 +56,18 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Account and Store Access
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         By installing Cart Plus, you authorize us to access certain Shopify store
                         information necessary for providing the Service, including but not limited to:
                     </p>
-                    <ul className="list-disc pl-[22px] text-[16px] leading-[26px] mb-[16px] space-y-[8px]">
+                    <ul className="list-disc pl-[22px] max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
                         <li>Store information</li>
                         <li>Theme information</li>
                         <li>Product information</li>
                         <li>Cart-related information</li>
                         <li>App configuration settings</li>
                     </ul>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         We only access data required to operate and improve the Service.
                     </p>
 
@@ -75,11 +75,11 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Subscription and Billing
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         Certain features of Cart Plus may require a paid subscription. By subscribing,
                         you agree that:
                     </p>
-                    <ul className="list-disc pl-[22px] text-[16px] leading-[26px] mb-[16px] space-y-[8px]">
+                    <ul className="list-disc pl-[22px] max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
                         <li>Fees will be charged through Shopify's billing system.</li>
                         <li>Subscription charges are recurring unless canceled.</li>
                         <li>Billing and payment processing are handled by Shopify.</li>
@@ -91,14 +91,14 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Merchant Responsibilities
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">You agree to:</p>
-                    <ul className="list-disc pl-[22px] text-[16px] leading-[26px] mb-[16px] space-y-[8px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">You agree to:</p>
+                    <ul className="list-disc pl-[22px] max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
                         <li>Provide accurate information.</li>
                         <li>Maintain the security of your Shopify account.</li>
                         <li>Use the App only for lawful purposes.</li>
                         <li>Ensure that your use of the App complies with all applicable laws and regulations.</li>
                     </ul>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         You are solely responsible for the content, products, promotions, and
                         information displayed on your store.
                     </p>
@@ -107,8 +107,8 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Acceptable Use
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">You may not:</p>
-                    <ul className="list-disc pl-[22px] text-[16px] leading-[26px] mb-[16px] space-y-[8px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">You may not:</p>
+                    <ul className="list-disc pl-[22px] max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
                         <li>Use the App for unlawful activities.</li>
                         <li>Attempt to gain unauthorized access to our systems.</li>
                         <li>Reverse engineer, copy, modify, or distribute the App.</li>
@@ -120,10 +120,10 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Intellectual Property
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         All rights, title, and interest in Cart Plus, including its software, trademarks, logos, designs, and content, remain the exclusive property of the Company.
                     </p>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         Installing or using the App does not grant you ownership rights in the Service.
                     </p>
 
@@ -131,14 +131,14 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Data Privacy
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         Your use of Cart Plus is also governed by our Privacy Policy.
                     </p>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         We take reasonable measures to protect merchant data. However, no online
                         service can guarantee complete security.
                     </p>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         By using the App, you consent to the collection and processing of information
                         necessary to provide the Service.
                     </p>
@@ -147,11 +147,11 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Third-Party Services
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         Cart Plus operates within the Shopify ecosystem and may interact with
                         third-party services. We are not responsible for:
                     </p>
-                    <ul className="list-disc pl-[22px] text-[16px] leading-[26px] mb-[16px] space-y-[8px]">
+                    <ul className="list-disc pl-[22px] max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
                         <li>Shopify platform availability.</li>
                         <li>Third-party applications.</li>
                         <li>Third-party websites or services.</li>
@@ -162,11 +162,11 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Service Availability
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         We strive to maintain reliable service but do not guarantee uninterrupted
                         availability. The Service may occasionally be unavailable due to:
                     </p>
-                    <ul className="list-disc pl-[22px] text-[16px] leading-[26px] mb-[16px] space-y-[8px]">
+                    <ul className="list-disc pl-[22px] max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
                         <li>Maintenance</li>
                         <li>System updates</li>
                         <li>Technical issues</li>
@@ -177,17 +177,17 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Disclaimer of Warranties
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         The service is provided "as is" and "as available." To the maximum extent
                         permitted by law, we disclaim all warranties, including:
                     </p>
-                    <ul className="list-disc pl-[22px] text-[16px] leading-[26px] mb-[16px] space-y-[8px]">
+                    <ul className="list-disc pl-[22px] max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
                         <li>Merchantability</li>
                         <li>Fitness for a particular purpose</li>
                         <li>Non-infringement</li>
                         <li>Uninterrupted or error-free operation</li>
                     </ul>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         We do not guarantee that the Service will increase sales, conversions,
                         revenue, or business performance.
                     </p>
@@ -196,18 +196,18 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Limitation of Liability
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         To the fullest extent permitted by law, Cart Plus and its owners, employees,
                         affiliates, and partners shall not be liable for:
                     </p>
-                    <ul className="list-disc pl-[22px] text-[16px] leading-[26px] mb-[16px] space-y-[8px]">
+                    <ul className="list-disc pl-[22px] max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
                         <li>Lost profits</li>
                         <li>Lost revenue</li>
                         <li>Business interruption</li>
                         <li>Data loss</li>
                         <li>Indirect, incidental, special, consequential, or punitive damages</li>
                     </ul>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         Our total liability shall not exceed the amount paid by you for the Service
                         during the preceding twelve (12) months.
                     </p>
@@ -216,11 +216,11 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Indemnification
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                        You agree to indemnify and hold harmless the owner of the Service, its officers, employees,
                         affiliates, and agents from any claims, liabilities, damages, losses, or expenses arising from:
                     </p>
-                    <ul className="list-disc pl-[22px] text-[16px] leading-[26px] mb-[16px] space-y-[8px]">
+                    <ul className="list-disc pl-[22px] max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
                         <li>Your use of the Service</li>
                         <li>Violation of these Terms</li>
                         <li>Violation of any law or third-party rights</li>
@@ -230,15 +230,15 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Termination
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         We may suspend or terminate your access to Cart Plus at any time if:
                     </p>
-                    <ul className="list-disc pl-[22px] text-[16px] leading-[26px] mb-[16px] space-y-[8px]">
+                    <ul className="list-disc pl-[22px] max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
                         <li>You violate these Terms.</li>
                         <li>Required by law.</li>
                         <li>Necessary to protect the Service or other users.</li>
                     </ul>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         You may stop using the App at any time by uninstalling it from your Shopify store.
                     </p>
 
@@ -246,7 +246,7 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Changes to Terms
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         We may update these Terms periodically. Updated versions will be posted within
                         the App or on our website. Continued use of the Service after updates
                         constitutes acceptance of the revised Terms.
@@ -256,7 +256,7 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Governing Law
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         The laws of the Country, excluding its conflicts of law rules, shall govern
                         this Terms and Your use of the Service. Your use of the Application may also be
                         subject to other local, state, national, or international laws.
@@ -265,7 +265,7 @@ export default function TermsConditions() {
                     <h3 className="font-semibold text-[20px] leading-[1.4] mb-[12px] mt-[24px]">
                         Disputes Resolution
                     </h3>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         If You have any concern or dispute about the Service, You agree to first try to
                         resolve the dispute informally by contacting the Company.
                     </p>
@@ -273,7 +273,7 @@ export default function TermsConditions() {
                     <h3 className="font-semibold text-[20px] leading-[1.4] mb-[12px] mt-[20px]">
                         For European Union (EU) Users
                     </h3>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         If You are a European Union consumer, you will benefit from any mandatory
                         provisions of the law of the country in which You are resident.
                     </p>
@@ -282,10 +282,10 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Contact Information
                     </h2>
-                    <p className="text-[16px] leading-[26px] mb-[16px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         If you have any questions regarding these Terms, please contact us:
                     </p>
-                    <ul className="list-none text-[16px] leading-[26px] mb-[16px] space-y-[8px]">
+                    <ul className="list-none max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
                         Email: support@cartplus.io
                     </ul>
 
@@ -293,7 +293,7 @@ export default function TermsConditions() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Entire Agreement
                     </h2>
-                    <p className="text-[16px] leading-[26px]">
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px]">
                      These Terms constitute the entire agreement regarding your use of Cart Plus and supersede all prior agreements, understandings, or communications.
                     </p>
 
