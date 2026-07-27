@@ -243,13 +243,13 @@ export default function ContactForm() {
             {/* ── LEFT: info ───────────────────────────────────── */}
             <div className="flex flex-col gap-[30px] lg:gap-[50px]">
               <div>
-                <h2 className='font-bold max-[540px]:text-[28px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px]'>
+                <h2 className='heading-line-height font-bold max-[540px]:text-[28px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px]'>
                   Let's Discuss Your Goals
                 </h2>
 
                 <div className='mt-3 flex flex-col gap-4'>
                   <div>
-                    <h3 className='font-semibold text-[20px] lg:text-[20px]'>Improve Your Cart Experience</h3>
+                    <h3 className='heading-line-height font-semibold text-[20px] lg:text-[20px]'>Improve Your Cart Experience</h3>
                     <p className='text-[16px] mt-1'>
                       Tell us about the challenges you're facing, and we'll help you create a smoother shopping journey for your customers.
                     </p>

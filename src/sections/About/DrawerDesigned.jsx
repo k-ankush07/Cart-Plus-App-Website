@@ -19,12 +19,12 @@ export default function DrawerDesigned() {
                 <div className='hidden md:block'>
                     <img src="https://cartplus.io/cartplus-img/Group 1707480407 (2).svg" alt="" className='absolute w-full max-w-[61%] right-[165px] top-[107px]' />
                 </div>
-                <div className="flex flex-col md:flex-row items-center gap-[30px] lg:gap-[75px] relative">
+                <div className="flex flex-col md:flex-row items-center gap-0 md:gap-[30px] lg:gap-[75px] relative">
 
                     {/* ── LEFT COLUMN (Text) — order-2 on mobile, order-1 on md+ ── */}
                     <div className="w-full flex flex-col justify-center order-2 md:order-1">
                         {/* Heading */}
-                        <h2 className="font-semibold max-w-[600px] max-[540px]:text-[28px] text-[45px] lg:text-[55px] max-[540px]:leading-[36px] leading-[60px]">
+                        <h2 className=" heading-line-height font-semibold max-w-[600px] max-[540px]:text-[28px] text-[45px] lg:text-[55px] max-[540px]:leading-[36px] leading-[60px]">
                             A Cart Drawer Designed to Increase Revenue
                         </h2>
 
@@ -54,7 +54,7 @@ export default function DrawerDesigned() {
                     </div>
 
                     {/* ── RIGHT COLUMN — Cart Drawer Mockups — order-1 on mobile, order-2 on md+ ── */}
-                    <div className="w-full relative flex items-center justify-center min-h-[420px] order-1 md:order-2">
+                    <div className="w-full relative block  md:flex items-center justify-center min-h-[420px] order-1 md:order-2">
 
                         {/* Group SVG (cart drawer mockup stack) */}
                         <img

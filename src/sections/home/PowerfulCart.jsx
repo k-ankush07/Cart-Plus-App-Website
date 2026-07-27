@@ -31,7 +31,7 @@ export default function PowerfulCart() {
     return (
         <section className='relative z-20'>
             <Container className='py-[40px] max-[540px]:py-[20px]'>
-                <h2 className='font-bold max-[540px]:leading-[36px] max-[540px]:text-[28px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[30px] mb-[20px] text-center'>
+                <h2 className='heading-line-height font-bold max-[540px]:leading-[36px] max-[540px]:text-[28px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[30px] mb-[20px] text-center'>
                     Different Journeys. One Powerful Cart Platform.
                 </h2>
                 <div className='grid grid-cols-1 md:grid-cols-3 max-[540px]:gap-[30px] gap-[20px] lg:gap-[40px] text-[#1D1E20] text-center'>
@@ -56,7 +56,7 @@ export default function PowerfulCart() {
                                     <img src={card.image} alt='HubCart' loading='lazy' decoding='async' />
                                 </div>
                                 <h3 className='text-[24px] leading-[30px] font-bold mb-[15px]'>{card.title}</h3>
-                                <p className='text-[16px] leading-[23px]'>{card.description}</p>
+                                <p className='text-[16px] leading-[23px] max-[540px]:text-[14px]'>{card.description}</p>
                             </div>
                         </div>
                     ))}

@@ -20,7 +20,7 @@ export default function OurMission({ img, heading, paragraph1, paragraph2, parag
 
                     {/* Right: Text Content */}
                     <div className="w-full text-center md:text-left">
-                        <h2 className="font-semibold max-[540px]:text-[26px] text-[45px] lg:text-[55px] max-[540px]:leading-[36px] leading-[60px]">
+                        <h2 className="heading-line-height font-semibold max-[540px]:text-[26px] text-[45px] lg:text-[55px] max-[540px]:leading-[36px] leading-[60px]">
                             {heading}
                         </h2>
 

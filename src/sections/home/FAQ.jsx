@@ -35,8 +35,8 @@ export default function FAQ({ faqs: faqsProp = faqs }) {
       <Container className="py-[40px] max-[540px]:py-[20px]">
        <div>
           <div className="text-center">
-            <h2 className="font-bold max-[540px]:text-[26px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px]">
-              Frequently asked questions
+            <h2 className="heading-line-height font-bold max-[540px]:text-[26px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px]">
+              Frequently Asked Questions
             </h2>
           </div>
 
@@ -53,7 +53,7 @@ export default function FAQ({ faqs: faqsProp = faqs }) {
                     onClick={() => setOpenIndex(isOpen ? -1 : i)}
                     className="flex w-full items-center justify-between  px-6 py-4 text-left cursor-pointer"
                   >
-                    <span className="max-[540px]:text-[16px] text-[20px] font-[600] text-[#000000] max-[540px]:leading-[18px] leading-[32px]">{faq.q}</span>
+                    <span className="max-[540px]:text-[16px] text-[20px] font-[600] text-[#000000] max-[540px]:leading-[22px] leading-[32px]">{faq.q}</span>
                     <img
                       src={isOpen ? minusImg : plusImg}
                       alt={isOpen ? 'collapse' : 'expand'}

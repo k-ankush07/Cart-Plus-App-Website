@@ -107,7 +107,7 @@ export default function Pricing({ showGradient }) {
       <Container className='py-[40px] max-[540px]:py-[20px] relative z-10'>
         <div>
           <div className='text-center max-[540px]:mb-[20px] mb-[40px]'>
-            <h2 className='font-bold max-[540px]:text-[26px] max-[540px]:leading-[36px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[15px] mb-[20px]'>
+            <h2 className='heading-line-height font-bold max-[540px]:text-[26px] max-[540px]:leading-[36px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[15px] mb-[20px]'>
               Simple, Transparent Pricing
             </h2>
             <p className='max-[540px]:text-[14px] text-[18px] max-[540px]:leading-[22px] leading-[28px] mx-auto max-w-[950px]'>
@@ -115,7 +115,13 @@ export default function Pricing({ showGradient }) {
             </p>
           </div>
 
-          <div className='grid max-[768px]:grid-cols-1 max-[1025px]:grid-cols-2 min-[1025px]:grid-cols-3 min-[1280px]:grid-cols-4 gap-[50px] md:gap-[50px] lg:gap-[40px] xl:gap[30px] items-stretch max-[540px]:pt-[0] pt-[20px] px-[0] lg:px-[40px]'>
+          {/*
+            NOTE: py-[20px] added here to give the grid breathing room
+            above/below so the translateY(-20px) pop-out on the active
+            card never visually collides with the row above/below it.
+            Adjust to taste.
+          */}
+          <div className='grid max-[768px]:grid-cols-1 max-[1025px]:grid-cols-2 min-[1025px]:grid-cols-3 min-[1280px]:grid-cols-4 gap-[50px] md:gap-[50px] lg:gap-[40px] xl:gap[30px] items-stretch max-[540px]:pt-[0] pt-[20px] px-[0] lg:px-[40px] py-[20px]'>
             {plans.map((plan) => {
               const isActive = hoveredId ? hoveredId === plan.id : plan.id === DEFAULT_ACTIVE_ID
 
@@ -125,9 +131,10 @@ export default function Pricing({ showGradient }) {
                   onMouseEnter={() => handleMouseEnter(plan.id)}
                   onMouseLeave={handleMouseLeave}
                   className={`relative rounded-[10px] py-[15px] lg:py-[30px] px-[15px] lg:px-[20px] flex flex-col justify-between
-                    transition-all duration-300 ease-out
+                    transition-all duration-300 ease-out will-change-transform
+                    ${plan.id === 1 ? 'max-[768px]:min-h-[540px]' : ''}
                     ${isActive
-                      ? 'text-white -mt-[20px] -mb-[20px] z-10'
+                      ? 'text-white z-10'
                       : 'bg-white text-[#1D1E20]'
                     }`}
                   style={
@@ -140,11 +147,13 @@ export default function Pricing({ showGradient }) {
                         border: '1px solid transparent',
                         borderRadius: '10px',
                         boxShadow: '6px 10px 25px 0px #B750FF4D',
+                        transform: 'translateY(-20px) scale(1.02)',
                       }
                       : {
                         border: '1px solid rgba(149, 0, 255, 0.2)',
                         borderRadius: '10px',
                         boxShadow: '0px 0px 220px 0px #9500FF14 inset',
+                        transform: 'translateY(0px) scale(1)',
                       }
                   }
                 >
@@ -161,7 +170,7 @@ export default function Pricing({ showGradient }) {
                   {/* Top Content */}
                   <div>
                     <h3 className='text-[20px] font-bold'>{plan.name}</h3>
-                    <p className={`text-[14px] mb-[20px] transition-colors duration-300 ${isActive ? 'text-white/70' : 'text-[#000000]'}`}>
+                    <p className={`text-[14px] transition-colors duration-300 ${plan.id === 1 ? 'mb-0' : 'mb-[20px]'} ${isActive ? 'text-white/70' : 'text-[#000000]'}`}>
                       {plan.subtitle}
                     </p>
 
@@ -181,12 +190,13 @@ export default function Pricing({ showGradient }) {
                       )}
                     </div>
                     <hr className={`max-[540px]:mb-[10px] mb-[16px] border-t transition-colors duration-300 ${isActive ? 'border-white/20' : 'border-[#F4F4F4]'}`} />
-                    <ul className='flex flex-col gap-[12px] my-[40px]'>
+                    <ul className={`flex flex-col gap-[12px] ${plan.id === 1 ? 'my-0' : 'my-[40px]'}`}>
                       {plan.features.map((feature, index) => (
                         <li key={index} className='flex items-center gap-[10px] text-[12px]'>
                           <div style={{
                             width: '15px',
-                            height: '15px',}}>
+                            height: '15px',
+                          }}>
                             <img
                               src={
                                 isActive

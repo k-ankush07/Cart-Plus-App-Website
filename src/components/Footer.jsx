@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
           </Link>
 
-          <p className="mt-[20px] text-[14px] leading-[26px]">
+          <p className="mt-[20px] text-[14px] leading-[26px] max-[540px]:leading-[22px]">
             Increase your revenue with smarter checkout, upsells, and conversion tools built for modern Shopify brands.
           </p>
 

@@ -46,7 +46,7 @@ export default function Features() {
       </div>
       <Container className='relative'>
         <div className='text-center'>
-          <h2 className='font-semibold max-[540px]:text-[28px] text-[45px] lg:text-[55px] max-[540px]:leading-[45px] leading-[60px]'>
+          <h2 className='heading-line-height font-semibold max-[540px]:text-[28px] text-[45px] lg:text-[55px] max-[540px]:leading-[45px] leading-[60px]'>
             Why Merchants Choose Cart Plus
           </h2>
           <p className='text-[18px] max-[540px]:text-[14px] py-[20px] max-[540px]:py-[16px]'>
@@ -70,7 +70,7 @@ export default function Features() {
                     className='w-full flex items-center justify-between py-[10px] text-left group cursor-pointer'
                   >
                     <h3
-                      className={`font-semibold text-[28px] max-[540px]:text-[22px] leading-[32px] transition-colors duration-200 ${isActive ? 'text-[#000000]' : 'text-[#000000]'
+                      className={`heading-line-height font-semibold text-[28px] max-[540px]:text-[22px] leading-[32px] transition-colors duration-200 ${isActive ? 'text-[#000000]' : 'text-[#000000]'
                         }`}
                     >
                       {feature.title}

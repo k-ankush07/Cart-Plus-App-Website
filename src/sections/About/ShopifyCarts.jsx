@@ -29,7 +29,7 @@ export default function ShopifyCarts() {
             <Container className="py-[40px] max-[540px]:py-[20px] relative z-10">
                 {/* Heading */}
                 <div className="text-center">
-                    <h2 className="font-semibold max-[540px]:text-[26px] text-[45px] lg:text-[55px] max-[540px]:leading-[34px] leading-[60px]">
+                    <h2 className="heading-line-height font-semibold max-[540px]:text-[26px] text-[45px] lg:text-[55px] max-[540px]:leading-[34px] leading-[60px]">
                         Why Most Merchants Fail to Convert Cart into Sales
                     </h2>
                     <p className="text-[18px] max-[540px]:text-[14px] py-[20px] max-[540px]:py-[16px]">
