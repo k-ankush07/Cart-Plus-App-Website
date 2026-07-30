@@ -32,7 +32,7 @@ export default function PowerfulCart() {
         <section className='relative z-20'>
             <Container className='py-[40px] max-[540px]:py-[20px]'>
                 <h2 className='heading-line-height font-bold max-[540px]:leading-[36px] max-[540px]:text-[28px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[30px] mb-[20px] text-center'>
-                    Different Journeys. One Powerful Cart Platform.
+                    Powerful Tools to Maximize Cart Performance
                 </h2>
                 <div className='grid grid-cols-1 md:grid-cols-3 max-[540px]:gap-[30px] gap-[20px] lg:gap-[40px] text-[#1D1E20] text-center'>
                     {cards.map((card) => (

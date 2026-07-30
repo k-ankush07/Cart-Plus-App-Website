@@ -94,10 +94,10 @@ export default function RevenueGrowth() {
         <section>
             <Container className='py-[40px] max-[540px]:py-[25px] relative'>
                 <h2 className='heading-line-height font-bold max-[540px]:text-[28px] text-[45px] lg:text-[50px] leading-[45px] lg:leading-[60px] max-[540px]:mb-[10px] mb-[20px] text-center'>
-                    Scalable Revenue Growth
+                    Trusted by Shopify Merchants Worldwide
                 </h2>
                 <p className='max-[540px]:text-[14px] text-[18px] max-[540px]:leading-[22px] leading-[28px] text-center max-[540px]:max-w-full max-w-[930px] m-auto max-[540px]:mb-[30px] mb-[20px]'>
-                    Join thousands of Shopify brands using Cart Plus to increase conversions, grow average order
+                     Thousands of Shopify brands using Cart Plus to increase conversions, grow average order
                     value, and drive more revenue automatically.
                 </p>
                 <div className="p-[1px] rounded-[15px] bg-[linear-gradient(264.46deg,rgba(255,255,255,0)_-14.65%,rgba(149,0,255,0.2)_32.08%)]">
