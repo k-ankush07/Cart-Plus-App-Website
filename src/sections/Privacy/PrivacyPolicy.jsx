@@ -112,7 +112,7 @@ export default function PrivacyPolicy() {
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[28px] leading-[1.3] mb-[20px] mt-[40px]">
                         Data Sharing and Disclosure
                     </h2>
-                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
+                    {/* <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         We may share information only in the following situations:
                     </p>
 
@@ -134,7 +134,7 @@ export default function PrivacyPolicy() {
 
                     <h3 className="font-semibold text-[20px] leading-[1.4] mb-[12px] mt-[24px]">
                         Legal Requirements
-                    </h3>
+                    </h3> */}
                     <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         We may disclose information if required by law or if we believe disclosure is
                         necessary to:
@@ -155,8 +155,7 @@ export default function PrivacyPolicy() {
                         App and comply with legal obligations.
                     </p>
                     <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
-                        When a merchant uninstalls Cart Plus, we will delete or anonymize stored data
-                        within a reasonable period unless retention is required by law.
+                        When a merchant uninstalls Cart Plus, we will delete data in 48 hours.
                     </p>
 
                     {/* Data Security */}
@@ -168,10 +167,10 @@ export default function PrivacyPolicy() {
                         safeguards designed to protect information against unauthorized access,
                         alteration, disclosure, or destruction.
                     </p>
-                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
+                    {/* <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         However, no method of electronic storage or internet transmission is completely
                         secure, and we cannot guarantee absolute security.
-                    </p>
+                    </p> */}
 
                     {/* Merchant Rights */}
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[28px] leading-[1.3] mb-[20px] mt-[40px]">
@@ -232,10 +231,7 @@ export default function PrivacyPolicy() {
                         We may update this Privacy Policy from time to time. Any changes will be posted
                         on this page with an updated "Last Updated" date.
                     </p>
-                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
-                        Continued use of the App after changes become effective constitutes acceptance
-                        of the revised Privacy Policy.
-                    </p>
+                
 
                     {/* Contact Us */}
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[28px] leading-[1.3] mb-[20px] mt-[40px]">

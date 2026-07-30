@@ -14,7 +14,6 @@ const benefits = [
 export default function DrawerDesigned() {
     return (
         <section className="relative ">
-
             <Container className="py-[40px] max-[540px]:py-[20px] relative z-10">
                 <div className='hidden md:block'>
                     <img src="https://cartplus.io/cartplus-img/Group 1707480407 (2).svg" alt="" className='absolute w-full max-w-[61%] right-[165px] top-[107px]' />
@@ -67,7 +66,7 @@ export default function DrawerDesigned() {
                     </div>
                 </div>
             </Container>
-            <div className='absolute z-0 bottom-[-150%] left-0 hidden xl:block'>
+            <div className='absolute z-0 bottom-[-140%] left-0 hidden xl:block'>
                 <img src="https://cartplus.io/cartplus-img/Subtract (7).svg" alt="" loading="lazy" decoding="async" />
             </div>
         </section>

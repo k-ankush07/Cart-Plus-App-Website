@@ -4,21 +4,21 @@ import Container from '../../components/Container'
 const cards = [
     {
         icon: "https://cartplus.io/cartplus-img/Group 1707480053.svg",
-        title: "Low Cart Conversions",
+        title: "Powerful Innovation",
         description:
-            "Even interested shoppers leave without purchasing when the cart experience creates friction.",
+            "We continuously develop practical features that help Shopify merchants create a smarter and more effective cart experience.",
     },
     {
         icon: "https://cartplus.io/cartplus-img/Group 1707480054.svg",
-        title: "No Upsell Opportunities",
+        title: "Merchant-First Approach",
         description:
-            "Many stores leave revenue on the table by failing to encourage additional purchases.",
+            "We design every feature around real merchant needs, making CartPlus simple to use and easy to customize.",
     },
     {
         icon: "https://cartplus.io/cartplus-img/Group 1707480055.svg",
-        title: "Slow & Clunky UX",
+        title: "Proven Performance",
         description:
-            "A slow, outdated cart experience disrupts the buying journey and drives customers away.",
+            "We focus on speed, stability, and reliability so your cart performs smoothly during every customer journey.",
     },
 ]
 
@@ -30,10 +30,10 @@ export default function ShopifyCarts() {
                 {/* Heading */}
                 <div className="text-center">
                     <h2 className="heading-line-height font-semibold max-[540px]:text-[26px] text-[45px] lg:text-[55px] max-[540px]:leading-[34px] leading-[60px]">
-                        Why Most Merchants Fail to Convert Cart into Sales
+                        Helping Stores Sell More With Every Cart
                     </h2>
                     <p className="text-[18px] max-[540px]:text-[14px] py-[20px] max-[540px]:py-[16px]">
-                        Default cart experiences create friction, reduce upsells, and quietly cost your store revenue every single day.
+                        CartPlus helps Shopify merchants turn that opportunity into results with powerful cart customization tools that improve the customer experience and encourage larger purchases. From small businesses to growing brands, we build features that make every cart more valuable.
                     </p>
                 </div>
 
@@ -43,7 +43,7 @@ export default function ShopifyCarts() {
                         <div
                             key={index}
                             className="rounded-[30px] p-[20px] lg:p-[50px] max-[540px]:p-[30px] flex flex-col justify-center text-center relative"
-                           
+
                         >
                             {/* Gradient border */}
                             <div

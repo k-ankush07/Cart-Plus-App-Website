@@ -144,19 +144,7 @@ export default function TermsConditions() {
                     </p>
 
                     {/* 9. Third-Party Services */}
-                    <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
-                        Third-Party Services
-                    </h2>
-                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
-                        Cart Plus operates within the Shopify ecosystem and may interact with
-                        third-party services. We are not responsible for:
-                    </p>
-                    <ul className="list-disc pl-[22px] max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
-                        <li>Shopify platform availability.</li>
-                        <li>Third-party applications.</li>
-                        <li>Third-party websites or services.</li>
-                        <li>Actions or comissions of third-party providers.</li>
-                    </ul>
+                    
 
                     {/* 10. Service Availability */}
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
@@ -192,25 +180,7 @@ export default function TermsConditions() {
                         revenue, or business performance.
                     </p>
 
-                    {/* 12. Limitation of Liability */}
-                    <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
-                        Limitation of Liability
-                    </h2>
-                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
-                        To the fullest extent permitted by law, Cart Plus and its owners, employees,
-                        affiliates, and partners shall not be liable for:
-                    </p>
-                    <ul className="list-disc pl-[22px] max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
-                        <li>Lost profits</li>
-                        <li>Lost revenue</li>
-                        <li>Business interruption</li>
-                        <li>Data loss</li>
-                        <li>Indirect, incidental, special, consequential, or punitive damages</li>
-                    </ul>
-                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
-                        Our total liability shall not exceed the amount paid by you for the Service
-                        during the preceding twelve (12) months.
-                    </p>
+                  
 
                     {/* 13. Indemnification */}
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
@@ -248,8 +218,16 @@ export default function TermsConditions() {
                     </h2>
                     <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         We may update these Terms periodically. Updated versions will be posted within
-                        the App or on our website. Continued use of the Service after updates
-                        constitutes acceptance of the revised Terms.
+                        the App or on our website.
+                    </p>
+
+
+                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
+                        Links to Other Websites
+
+                    </h2>
+                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
+                    Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
                     </p>
 
                     {/* 16. Governing Law */}
@@ -289,14 +267,7 @@ export default function TermsConditions() {
                         Email: support@cartplus.io
                     </ul>
 
-                    {/* 18. Entire Agreement */}
-                    <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
-                        Entire Agreement
-                    </h2>
-                    <p className="max-[540px]:text-[14px] text-[18px] leading-[26px]">
-                     These Terms constitute the entire agreement regarding your use of Cart Plus and supersede all prior agreements, understandings, or communications.
-                    </p>
-
+               
                 </div>
             </Container>
             <div className='absolute z-0 top-[30%] right-0 hidden xl:block'>

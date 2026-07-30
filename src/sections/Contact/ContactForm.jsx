@@ -14,10 +14,10 @@ const ICONS = {
 }
 
 const SOCIAL = [
-  { key: 'linkedin', href: '#', label: 'LinkedIn' },
-  { key: 'facebook', href: '#', label: 'Facebook' },
+  { key: 'linkedin', href: 'https://www.linkedin.com/in/cart-plus-2375a5422/', label: 'LinkedIn' },
+  { key: 'facebook', href: 'https://www.facebook.com/profile.php?id=61591767910161', label: 'Facebook' },
   // { key: 'twitter', href: '#', label: 'Twitter/X' },
-  { key: 'instagram', href: '#', label: 'Instagram' },
+  { key: 'instagram', href: 'https://www.instagram.com/cart__plus/', label: 'Instagram' },
 ]
 
 const CONTACT_INFO = [
@@ -249,18 +249,18 @@ export default function ContactForm() {
 
                 <div className='mt-3 flex flex-col gap-4'>
                   <div>
-                    <h3 className='heading-line-height font-semibold text-[20px] lg:text-[20px]'>Improve Your Cart Experience</h3>
+                    {/* <h3 className='heading-line-height font-semibold text-[20px] lg:text-[20px]'>Improve Your Cart Experience</h3> */}
                     <p className='text-[16px] mt-1'>
                       Tell us about the challenges you're facing, and we'll help you create a smoother shopping journey for your customers.
                     </p>
                   </div>
 
-                  <div>
+                  {/* <div>
                     <h3 className='font-semibold text-[18px] lg:text-[20px]'>Boost Conversions & Revenue</h3>
                     <p className='text-[16px] mt-1'>
                       Discover how Cart Plus can reduce cart abandonment, increase average order value, and help turn more visitors into customers.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -290,6 +290,7 @@ export default function ContactForm() {
                       key={key}
                       href={href}
                       aria-label={label}
+                      target='_blank'
                       className="flex h-[38px] sm:h-[50px] w-[38px] sm:w-[50px] items-center justify-center rounded-full bg-[#6C4DFF] "
 
                     >

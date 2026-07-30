@@ -99,15 +99,15 @@ export default function Features() {
 
                   {/* Collapsible body */}
                   <div
-                    className={`overflow-hidden transition-all duration-350 ease-in-out ${isActive ? 'max-h-[200px] pb-[18px]' : 'max-h-0'
+                    className={`overflow-hidden transition-all duration-350 ease-in-out ${isActive ? 'max-h-[200px] pb-[15px]' : 'max-h-0'
                       }`}
                   >
-                    <p className='text-[18px] max-[540px]:text-[16px] my-[10px] leading-[28px] max-[540px]:leading-[22px] max-w-full md:max-w-[415px] text-black'>
+                    <p className='text-[18px] max-[540px]:text-[16px] my-[5px] leading-[28px] max-[540px]:leading-[22px] max-w-full md:max-w-[415px] text-black'>
                       {feature.description}
                     </p>
-                    <a href={feature.href} className='inline-block text-[16px] underline'>
+                    {/* <a href={feature.href} className='inline-block text-[16px] underline'>
                       {feature.linkText}
-                    </a>
+                    </a>*/}
                   </div>
                 </div>
               )
