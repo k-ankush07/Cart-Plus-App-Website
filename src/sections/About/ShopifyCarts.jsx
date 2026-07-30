@@ -3,19 +3,19 @@ import Container from '../../components/Container'
 
 const cards = [
     {
-        icon: "https://cartplus.io/cartplus-img/Group 1707480053.svg",
+        icon: "https://cartplus.io/cartplus-img/newLayer_1.svg",
         title: "Powerful Innovation",
         description:
             "We continuously develop practical features that help Shopify merchants create a smarter and more effective cart experience.",
     },
     {
-        icon: "https://cartplus.io/cartplus-img/Group 1707480054.svg",
+        icon: "https://cartplus.io/cartplus-img/11Layer_1.svg",
         title: "Merchant-First Approach",
         description:
             "We design every feature around real merchant needs, making CartPlus simple to use and easy to customize.",
     },
     {
-        icon: "https://cartplus.io/cartplus-img/Group 1707480055.svg",
+        icon: "https://cartplus.io/cartplus-img/Layer_1-11.svg",
         title: "Proven Performance",
         description:
             "We focus on speed, stability, and reliability so your cart performs smoothly during every customer journey.",
