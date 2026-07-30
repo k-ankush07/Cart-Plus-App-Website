@@ -20,7 +20,7 @@ export default function TermsConditions() {
 
                     <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
                         Welcome to Cart Plus. These Terms and Conditions ("Terms") govern your access to and use of the Cart Plus
-                         Shopify app (the "Service")
+                        Shopify app (the "Service")
                     </p>
                     <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[20px]">
                         By installing, accessing, or using Cart Plus, you agree to be bound by these
@@ -144,7 +144,7 @@ export default function TermsConditions() {
                     </p>
 
                     {/* 9. Third-Party Services */}
-                    
+
 
                     {/* 10. Service Availability */}
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
@@ -180,21 +180,16 @@ export default function TermsConditions() {
                         revenue, or business performance.
                     </p>
 
-                  
 
-                    {/* 13. Indemnification */}
+
+                    {/* 13. Responsibility */}
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
-                        Indemnification
+                        Responsibility
                     </h2>
                     <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
-                       You agree to indemnify and hold harmless the owner of the Service, its officers, employees,
-                        affiliates, and agents from any claims, liabilities, damages, losses, or expenses arising from:
+                        You are responsible for how you use the Service. If your actions violate these Terms, break the law, or infringe on someone else's rights, and those actions cause claims, damages, or expenses for us, you agree to cover those costs and protect us from those claims.
                     </p>
-                    <ul className="list-disc pl-[22px] max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px] space-y-[8px]">
-                        <li>Your use of the Service</li>
-                        <li>Violation of these Terms</li>
-                        <li>Violation of any law or third-party rights</li>
-                    </ul>
+
 
                     {/* 14. Termination */}
                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
@@ -222,12 +217,12 @@ export default function TermsConditions() {
                     </p>
 
 
-                     <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
+                    <h2 className="font-semibold text-[35px] max-[540px]:text-[26px] leading-[1.3] mb-[20px] mt-[20px]">
                         Links to Other Websites
 
                     </h2>
                     <p className="max-[540px]:text-[14px] text-[18px] leading-[26px] mb-[16px]">
-                    Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
+                        Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
                     </p>
 
                     {/* 16. Governing Law */}
@@ -267,7 +262,7 @@ export default function TermsConditions() {
                         Email: support@cartplus.io
                     </ul>
 
-               
+
                 </div>
             </Container>
             <div className='absolute z-0 top-[30%] right-0 hidden xl:block'>
